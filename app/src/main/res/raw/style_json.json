@@ -1,0 +1,31 @@
+[
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "color": "#55f9ff"
+      },
+      {
+        "weight": 0.5
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#55f9ff"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#35d6ff"
+      }
+    ]
+  }
+]

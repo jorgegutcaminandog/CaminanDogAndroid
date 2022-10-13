@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iniciofrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio_Fragment">
+
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+         />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2_markey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/img_pin_con_sombra"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@id/map"
+        app:layout_constraintEnd_toEndOf="@id/map"
+        app:layout_constraintStart_toStartOf="@id/map"
+        app:layout_constraintTop_toTopOf="@id/map" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_direcc"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comp_sup"
+            android:background="@color/white"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+
+            app:cardCornerRadius="5dp"
+            app:cardElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/nombre_txt_inicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+
+                    android:shadowColor="@color/black"
+                    android:text="Cargando..."
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="3dp"
+                    android:text="@string/Donde_se_encuentra_tu_perrito"
+                    android:textColor="@color/black"
+                    android:shadowColor="@color/black"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.11"
+                            android:src="@drawable/img_direccion"
+                            android:layout_gravity="center"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.89"
+                            app:cardBackgroundColor="@color/azul_caminandog"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="8dp">
+
+                            <TextView
+                                android:id="@+id/txt_direc1_princ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:drawableEnd="@drawable/img_editarxxxhdpi_"
+                                android:textColorHint="@color/white"
+                                android:hint="@string/Ingresa_la_calle_o_el_nombre_del_lugar" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.11"
+                            android:src="@drawable/img_puerta_xxxhdpi"
+                            android:layout_gravity="center"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.89"
+                            app:cardBackgroundColor="@color/azul_caminandog"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="8dp">
+
+                            <EditText
+                                android:id="@+id/int_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:textSize="14sp"
+                                android:focusable="true"
+                                android:drawableEnd="@drawable/img_editarxxxhdpi_"
+                                android:hint="@string/Ingresa_el_numero_interior"
+                                android:textColorHint="@color/white"
+                                android:textColor="@color/white"/>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="50dp">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_casa"
+                android:layout_width="0dp"
+                android:foregroundGravity="top"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="0.50"
+                android:background="@color/white"
+                android:clickable="true"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/casa_img"
+                        android:padding="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_casa_negativoxxxhdpi"></ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/word_casa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/Casa"
+                            android:textColor="@color/azul_caminandog"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/btn_casa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/Define_una_ubicacion"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_ultimo"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_weight="0.50"
+                android:background="@color/white"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_ultimo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:src="@drawable/img_ultimo_negativoxxxhdpi"></ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/word_ultimo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/Ultimo"
+                            android:textColor="@color/azul_caminandog"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/direccion_ultimo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/Solicita_un_paseo"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_ground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/openchat"
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:background="@drawable/ic_chat_inicio" />
+
+                <TextView
+                    android:id="@+id/textBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/openchat"
+                    android:layout_alignRight="@id/openchat"
+                    android:background="@drawable/badge_circle"
+                    android:text="10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+
+                    android:translationZ="90dp" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:foregroundGravity="bottom"
+                android:gravity="bottom"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="1dp">
+
+
+                <LinearLayout
+                    android:id="@+id/comp_inf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:foregroundGravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/idCardView_button"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.45"
+                            android:foregroundGravity="bottom"
+                            android:gravity="bottom"
+                            android:outlineAmbientShadowColor="@color/black"
+                            android:outlineSpotShadowColor="@color/colorPrimary"
+                            app:cardBackgroundColor="@color/azul_caminandog"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="1dp">
+
+                            <Button
+                                android:id="@+id/btnEnviarDireccion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/azul_caminandog"
+                                android:drawableStart="@drawable/img_pagar_paseoxxxhdpi"
+                                android:foregroundGravity="center"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="false"
+                                android:text="@string/Solicitar_Paseo"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textColorHighlight="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.10"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="0.2dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/separator"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:textSize="25dp" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/idCardView_button2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.45"
+                            android:foregroundGravity="bottom"
+                            android:gravity="bottom"
+                            android:outlineAmbientShadowColor="@color/black"
+                            android:outlineSpotShadowColor="@color/colorPrimary"
+                            android:paddingLeft="10dp"
+                            app:cardBackgroundColor="@color/azul_caminandog"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="1dp">
+
+                            <Button
+                                android:id="@+id/btnEnviarDireccion_paquete"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/azul_caminandog"
+                                android:drawableStart="@drawable/img_pagar_paquetexxxhdpi"
+                                android:foregroundGravity="center"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="5dp"
+                                android:shadowColor="@color/azul_caminandog"
+                                android:singleLine="false"
+                                android:text="@string/Agendar_Paseo"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textColorHighlight="@color/azul_caminandog"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_inicio"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:indeterminateTint="@color/azul_caminandog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gps"
+        android:background="@color/btn_logut_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        android:text="@string/Para_una_mejor_experiencia"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

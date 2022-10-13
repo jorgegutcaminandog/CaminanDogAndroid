@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmpliarVigenciaRecuperandog">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            ></Button>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ampliar_vigencia"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"></TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@id/header">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <LinearLayout
+
+        android:id="@+id/comp_infvig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/dialog_roundeduponly"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+
+
+                    <TextView
+                        android:paddingLeft="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/separator"
+                        android:textSize="0.1sp" />
+
+                    <TextView
+                        android:id="@+id/textView_ivapgggago"
+                        android:layout_width="match_parent"
+                        android:textSize="12sp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:paddingLeft="25dp"
+                        android:text="@string/Total_a_pagarr" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="10dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/separator"
+                        android:textSize="0.1sp" />
+
+                    <TextView
+                        android:id="@+id/txt_total_recupV"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:textColor="@color/black"
+                        android:paddingLeft="10dp"
+                        android:text="MXN $###.##" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/separator"
+            android:textSize="0.1sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:orientation="horizontal"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp">
+
+
+                <ImageButton
+                    android:id="@+id/scan_btn_confrecup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:src="@drawable/img_agregar_tarjetaxxxhdpi"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Agregar_tarjeta"
+                    android:textStyle="bold"
+                    android:gravity="bottom"
+                    android:textColor="@color/azul_caminandog" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:text="@string/Selecciona_tu_tarjeta" />
+
+                <Spinner
+                    android:id="@+id/spinner_servicesrecupV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.50"
+                    android:paddingLeft="20dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_pagarRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:text="@string/Pagar_placas"/>
+
+    </LinearLayout>
+
+</FrameLayout>

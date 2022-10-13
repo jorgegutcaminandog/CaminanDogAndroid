@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/frameLayout3"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".Tacking_map"
+>
+
+<LinearLayout
+    android:paddingTop="5dp"
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Categoría" />
+
+                <TextView
+                    android:id="@+id/txt_value_cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/Tiempo_recorrido" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <Chronometer
+                        android:id="@+id/crono_crono"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="0.40"
+                        android:gravity="left"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.20"
+                        android:gravity="left"
+                        android:text="@string/De"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <Chronometer
+                        android:id="@+id/crono_crono_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="0.40"
+                        android:gravity="left"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapatracking"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.40" />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Paseador"
+                />
+
+            <TextView
+                android:id="@+id/nom_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:gravity="center|bottom"
+            android:layout_gravity="bottom"
+            android:paddingTop="10dp"
+            android:id="@+id/img_pas"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.33"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="bottom"
+            />
+
+        <Button
+            android:id="@+id/btn_llam"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:text="@string/Llamar"
+            android:drawableBottom="@drawable/ic_telnegro"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressllam"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+        </ProgressBar>
+
+
+        <Button
+            android:id="@+id/btn_chat"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:text="@string/Mensaje"
+            android:drawableBottom="@drawable/ic_chat"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Perritos"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="top"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        />
+
+</LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

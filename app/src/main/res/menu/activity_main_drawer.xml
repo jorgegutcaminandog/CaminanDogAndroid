@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_img_inicio"
+            android:title="@string/inicio_str" />
+        <item
+            android:id="@+id/nav_recuperandog"
+            android:icon="@drawable/ic_img_recuperandog"
+            android:title="@string/recuperandog_str" />
+        <item
+            android:id="@+id/nav_pasact"
+            android:icon="@drawable/ic_img_paseos"
+            android:title="@string/pasact_str" />
+        <item
+            android:id="@+id/nav_perros"
+            android:icon="@drawable/ic_img_perrhijos"
+            android:title="@string/perros_str" />
+        <item
+            android:id="@+id/nav_paseadores"
+            android:icon="@drawable/ic_img_tarjetas"
+            android:title="@string/pago_str" />
+        <item
+            android:id="@+id/nav_codigos"
+            android:icon="@drawable/ic_img_cupones"
+            android:title="@string/codigos_str" />
+        <item
+            android:id="@+id/nav_tarifas"
+            android:icon="@drawable/ic_img_tarifas"
+            android:title="@string/tarifas_str" />
+        <item
+            android:id="@+id/nav_hotel"
+            android:icon="@drawable/ic_aliados"
+            android:title="@string/romapets_str" />
+
+        <item
+            android:id="@+id/nav_acercade"
+            android:icon="@drawable/ic_contactanos"
+            android:title="@string/terminos_str" />
+
+
+
+    </group>
+
+
+
+</menu>

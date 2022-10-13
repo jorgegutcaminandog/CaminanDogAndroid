@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Open Editor Strings//
+
+    <string name="app_name">Caminandog</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_password2">Repeat password</string>
+    <string name="inicio_str">Home</string>
+    <string name="perros_str">Dogs</string>
+    <string name="romapets_str">Allies</string>
+    <string name="tarifas_str">Rates</string>
+    <string name="pasact_str">Walks</string>
+    <string name="terminos_str">Contact us</string>
+    <string name="pago_str">Cards</string>
+    <string name="codigos_str">Codes</string>
+    <string name="recuperandog_str">RecuperandDog</string>
+    <string name="edad">Age</string>
+    <string name="comportamiento">Behaviour</string>
+    <string name="padecimiento">Condition</string>
+    <string name="raza">Race</string>
+    <string name="agregar">Add</string>
+    <string name="finalizar">Finalize</string>
+    <string name="add_card" translatable="false">Add another credit card</string>
+    <string name="checkout">Generate</string>
+    <string name="card">Card</string>
+    <string name="sessionId">Check username:</string>
+    <string name="getSessionId">Create Device Id</string>
+    <string name="token">Token</string>
+    <string name="card_created">Credit card was registered correctly </string>
+    <string name="button_save">Save</string>
+    <string name="holder_name">Owner</string>
+    <string name="card_number">Credit card number</string>
+    <string name="info">Information</string>
+    <string name="error">Mistake</string>
+    <string name="card_added">Register card</string>
+    <string name="invalid_card_number">Invalid number</string>
+    <string name="invalid_holder_name">Primary holder is required </string>
+    <string name="invalid_cvv">Invalid password</string>
+    <string name="invalid_expire_date">Invalid expiration number</string>
+    <string name="progress_message">Processing</string>
+    <string name="title_activity_perros__adapter">Dogs_Adapter</string>
+    <string name="prompt">Hours</string>
+    <string name="declined">Card was declined</string>
+    <string name="expired">Card has expired</string>
+    <string name="insufficient_funds">Credit card does not have sufficient funds</string>
+    <string name="stolen_card">The credit card has been identified as a stolen card</string>
+    <string name="suspected_fraud">The credit card has been identified as a fraudulent card</string>
+    <string name="communication_error">Unable to establish communication with the server </string>
+    <string name="already_exists">The card has been registered</string>
+    <string name="error_creating_card">An error has been found registering this card </string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="btn_login">Register</string>
+    <string name="prompt_password">Enter your password</string>
+    <string name="btn_link_to_register">¿Are you not registered yet? Register here!</string>
+    <string name="btn_link_to_login">¿You are already registered? Login!</string>
+    <string name="btn_forgot_password">¿Did you forget your password?</string>
+    <string name="btn_reset_password">Restore password</string>
+    <string name="btn_back">Back</string>
+    <string name="lbl_forgot_password">¿Did you forget your password?</string>
+    <string name="forgot_password_msg" translatable="false">Enter your email to send you the reset instructions</string>
+    <string name="paseadors_str">Walkers</string>
+    <string name="paqact_str">Packages</string>
+    <string name="acerca_str">About CaminanDog</string>
+
+    <string-array name="meses">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="razas">
+        <item>Alano</item>
+        <item>Alaskan Malamute</item>
+        <item>American bully pocket</item>
+        <item>American Staffordshire Terrier</item>
+        <item>American Water Spaniel</item>
+        <item>Old English Shepherd </item>
+        <item>Gascogne Blue Basset Hound</item>
+        <item>Basset Hound</item>
+        <item>Brittany Fawn Basset</item>
+        <item>Beagle</item>
+        <item>Bearded Collie</item>
+        <item>Bernese Mountain</item>
+        <item>Maltese Bichon</item>
+        <item>Bobtail</item>
+        <item>Border Collie</item>
+        <item>Boston Terrier</item>
+        <item>Boxer</item>
+        <item>Bull Terrier</item>
+        <item>American Bulldog</item>
+        <item>French Bulldog</item>
+        <item>English Bulldog</item>
+        <item>Poodle</item>
+        <item>Pug</item>
+        <item>Chihuahua</item>
+        <item>Cirneco dell’Etna</item>
+        <item>Chow Chow</item>
+        <item>American Cocker Spaniel</item>
+        <item>English Cocker Spaniel</item>
+        <item>Dalmatian</item>
+        <item>Dobermann</item>
+        <item>Dogo Alemán</item>
+        <item>Dogo Argentino</item>
+        <item>Dogo de Burdeos</item>
+        <item>Finnish</item>
+        <item>Haired Fox Terrier</item>
+        <item>Fox Terrier</item>
+        <item>American Foxhound</item>
+        <item>English Foxhound</item>
+        <item>French Poodle</item>
+        <item>Afghan Greyhound</item>
+        <item>Giant Pyrenees</item>
+        <item>Golden Retriever</item>
+        <item>Go D’atura</item>
+        <item>Great Dane</item>
+        <item>Siberian Husky</item>
+        <item>Kerry blue terrier</item>
+        <item>West Siberian Laika</item>
+        <item>European Russian Laika</item>
+        <item>Labrador Retriever</item>
+        <item>Pyrenean Mastiff</item>
+        <item>Tibet Mastiff</item>
+        <item>Spanish Mastiff</item>
+        <item>Neopolitan Mastiff</item>
+        <item>Mixed</item>
+        <item>Another</item>
+        <item>German Shepherd </item>
+        <item>Australian Pastor</item>
+        <item>Belgian Shepherd</item>
+        <item>Brie Shepard</item>
+        <item>Pink Faced Pyrenean Shepard</item>
+        <item>Shetland Sheepdog</item>
+        <item>Pekingese</item>
+        <item>Chesapeake Bay Retriever</item>
+        <item>Drenthe Retriever</item>
+        <item>Smooth Haired Retriever</item>
+        <item>Curly Haired Retriever</item>
+        <item>Portuguese Retriever</item>
+        <item>Pitbull</item>
+        <item>Ibizan Hound</item>
+        <item>Portuguese Hound</item>
+        <item>Canary Mastiff</item>
+        <item>Majorcan Bulldog</item>
+        <item>Pug</item>
+        <item>Rottweiler</item>
+        <item>Rough Collie</item>
+        <item>Spanish Hound</item>
+        <item>Hellenic Hound</item>
+        <item>Italian Hound</item>
+        <item>Swiss Hound</item>
+        <item>Samoyed</item>
+        <item>Saint Bernard</item>
+        <item>Schnauzer</item>
+        <item>Giant Schnauzer</item>
+        <item>Scottish Terrier</item>
+        <item>Irish Setter</item>
+        <item>Shar Pei</item>
+        <item>Shiba Inu</item>
+        <item>Siberian Husky</item>
+        <item>Staffordshire Bull Terrier</item>
+        <item>Dachshund</item>
+        <item>Newfoundland</item>
+        <item>Australian Terrier</item>
+        <item>Scottish Terrier</item>
+        <item>Irish Terrier</item>
+        <item>Japanese Terrier</item>
+        <item>Black Russian Terrier</item>
+        <item>Norfolk Terrier</item>
+        <item>Norwich Terrier</item>
+        <item>Yorkshire Terrier</item>
+    </string-array>
+
+    <string-array name="padecimiento">
+        <item>Allergies</item>
+        <item>Cancer</item>
+        <item>Viral Hepatitis</item>
+        <item>Mastitis</item>
+        <item>Distemper</item>
+        <item>Otitis</item>
+        <item>Intestinal Parasites</item>
+        <item>Parvovirus</item>
+        <item>Pyometra</item>
+        <item>Gastric Torsion</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="edad">
+        <item>6 months</item>
+        <item>8 months</item>
+        <item>12 months</item>
+        <item>18 months</item>
+        <item>2 years</item>
+        <item>3 years</item>
+        <item>4 years</item>
+        <item>5 years</item>
+        <item>6 years</item>
+        <item>7 years</item>
+        <item>8 years</item>
+        <item>9 years</item>
+        <item>10 years</item>
+        <item>11 years</item>
+        <item>12 years</item>
+        <item>13 years</item>
+        <item>14 years</item>
+        <item>15 years</item>
+        <item>16 years</item>
+    </string-array>
+
+    <string-array name="comportamiento">
+        <item>Anxious</item>
+        <item>Calm</item>
+        <item>Aggressive</item>
+    </string-array>
+
+    <string-array name="sino">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="year_array">
+        <item>Year</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+    </string-array>
+    <string-array name="month_array">
+        <item>Month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="dias2">
+        <item>3 Days</item>
+        <item>5 Days</item>
+    </string-array>
+
+    //Activiy_configuracion_paseo Strings//
+    <string name="Define_el_paseo">Define the weigth</string>
+    <string name="Tiempo">Time</string>
+    <string name="Perritos">Dog(s)</string>
+    <string name="Agregar">Add</string>
+    <string name="Categoria">Category:</string>
+    <string name="Atras">Back</string>
+    <string name="Pago_de_paseo">Payment for walk</string>
+    <string name="perritos_tiempo_paseo"># dogs, walk time</string>
+    <string name="Categoria_dias">Category, # days</string>
+    <string name="Descuento">Discount</string>
+    <string name="Cupón_Promocional">Promotional Coupon</string>
+    <string name="Subtotal">Subtotal</string>
+    <string name="Total_a_pagar">Payment total</string>
+    <string name="Tarjeta">Credit Card</string>
+    <string name="selecciona_tu_tarjeta">Select your credit card</string>
+    <string name="Añadir">Add</string>
+
+    //Activiy_account Strings//
+    <string name="Nombre">Name</string>
+    <string name="Apellido_Paterno">Last Surname</string>
+    <string name="Apellido_Materno">Middle Surname</string>
+    <string name="Telefono">Phone Number</string>
+    <string name="Telefono_Opcional">Other Phone Number</string>
+    <string name="ENVIAR">SEND</string>
+
+    //Activity_lector Strings//
+    <string name="Escanea_el_codigo_QR_que_se_encuentra_en_la_placa_del_perrito">Scan the QR code found on the puppys plate</string>
+
+    //Activity_login_options//
+    <string name="Al_usar_Caminandog_aceptas_la_politica_de_privacidad">By using CaminanDog you accept the privacy policy</string>
+
+    //Activity_maps_solic_pas Strings//
+    <string name="Cancelar">Cancel</string>
+
+    //Activity_tracking//
+    <string name="PAGAR">TO PAY</string>
+
+    //Card_pipi_popo//
+    <string name="NOMBRE">Name</string>
+
+    //Dialog_add_perro//
+    <string name="CANCELAR">Cancel</string>
+    <string name="Agrega_a_tu_perrito">Add yor dog</string>
+    <string name="Guardar">Save</string>
+    <string name="Datos">Data</string>
+    <string name="Esta_desparasitado">¿Is dog dewormed?</string>
+    <string name="Cuenta_con_tratamiento_antipulgas">¿Does your dog have flea treatment?</string>
+    <string name="Registro_Unico_de_animales_de_compañia_RUAC_si_no_cuentas_con_el_obtenlo_aqui_solo_CDMX">Single registry of companion animals RUAC; if you do not have it, then only CDMX?</string>
+    <string name="Ingresa_RUAC_opcional">Enter RUAC (Optional)</string>
+    <string name="De_las_vacunas_polivalentes_cuenta_con">Of Polyvalent vaccines have:</string>
+    <string name="Primera_dosis">First Dose</string>
+    <string name="Segunda_dosis">Second Dose</string>
+    <string name="Tercera_dosis">Third Dose</string>
+
+    //Dialog_add_vacunas//
+    <string name="Vacunas">Vaccination</string>
+
+    //Dialog_add_agenda//
+    <string name="Selecciona_las_fechas_que_deseas_agendar">Select the dates you want to save</string>
+    <string name="Paseos">Walks</string>
+    <string name="PASEOS">3 Walks</string>
+    <string name="PASEOSS">5 Walks</string>
+    <string name="PASEOSSS">10 Walks</string>
+    <string name="Calendario">Calendar</string>
+    <string name="Agenda">Agenda</string>
+    <string name="Continuar">Continue</string>
+
+    //Dialog_agregar_cupon//
+    <string name="Agregar_codigo">Add Code</string>
+    <string name="Ingresa_el_codigo_del_cupon">Enter the coupon code</string>
+    <string name="Los_cupones_de_paseos_gratis_generaran_un_cargo_temporal_que_seran_reembolsados">Free walk coupons will generate a temporary charge of $3.00 which will be refunded within a maximum period of 48 hours</string>
+
+    //Dialog_calif//
+    <string name="Califica_tu_último_paseo_de">Rate your last walk</string>
+    <string name="Cuanto_disfrutó_de_su_paseo">How much did you enjoy your walk</string>
+    <string name="Dinos_mas_sobre_la_experiencia_CaminanDog_y_sobre_tu_paseador">Tell us more about the CaminanDog experience and about your walker</string>
+    <string name="Paseador">Walker</string>
+    <string name="si">Yes</string>
+    <string name="o">or</string>
+    <string name="no">No</string>
+    <string name="Llegó_en_forma_y_a_tiempo_por_tus_mascotas">Did your walker arrive in a timely manner for your pet(s)?</string>
+    <string name="Llegó_con_playera_sudadera_y_gorra_de_CaminanDog">Did your walker arrive with a CaminanDog Shirt/sweatshirt and cap?</string>
+    <string name="Le_brindó_una_sesión_de_aromaterapia_para_tus_mascotas">Were your pet(s) provided with an aromatherapy/smell therapy session?</string>
+
+    //Dialog_chat_list//
+    <string name="Centro_de_Contacto">Contact Center</string>
+    <string name="Pregunta_por_disponibilidad_de_paseos_soluciona_tus_dudas_o_reagenda_un_paseo">Ask for availability for walks,Solve or resolve your doubts / or reschedule your walk.</string>
+    <string name="Atención_a_clientes_CaminanDog">CaminanDog customer service</string>
+    <string name="Asesor_CaminanDog">CaminanDog Advisor</string>
+    <string name="Contacto_con_tu_paseador_por_paseo">Contact with your walker by dog walk</string>
+    <string name="Sin_Chats">Without chats</string>
+    <string name="Aun_no_tienes_paseos_Activos_o_Agendados">You still do not have active or scheduled walks</string>
+
+    //Dialog_chat_soporte//
+    <string name="Recuerda_que_el_uso_de_este_chat_es_solo_para_cuestiones_relacionadas_con_el_servicio_de_CaminanDog">Remember that the use of this chat is strictly for questions related to the service of CaminanDog. Any abuse will be reported or punishable/sanctioned</string>
+    <string name="Enviando">Sending...</string>
+    <string name="Escribir_mensaje">Write a message</string>
+
+    //Dialog_complete_register//
+    <string name="Cuentanos_mas_sobre_ti">Tell us more about you</string>
+    <string name="Apellido">Surname</string>
+    <string name="Email">Email</string>
+
+    //Dialog_confirmar//
+    <string name="Deseas_finalizar_el_paseo">Do you want to end the walk?</string>
+
+    //Dialog_elim_card//
+    <string name="Espera">Wait...</string>
+    <string name="Aceptar">Accept</string>
+
+    //Dialog_info_agenda//
+    <string name="Estamos_agendando_tus_paseos_y_eligiendo_el_paseador_mas_adecuado">We are scheduling your walks and choosing the most suitable walker</string>
+    <string name="Muchas_gracias_por_tu_compra">Thank you very much for your purchase!</string>
+
+    //Dialog_si_no//
+    <string name="Eliminar">Delete</string>
+    <string name="Deseas_eliminar_la_cedula">Do you want to delete the identification card?</string>
+
+    //Dialog_vincular_placa//
+    <string name="Vincular_placa">Link Plate</string>
+    <string name="Selecciona_el_perrito_que_deseas_vincular_a_esta_placa">Select the dog you want to link to this badge or plate.</string>
+    <string name="Recuerda_que_solo_puedes_vincular_un_perrito_por_placa">Remember that you can only link one dog per plate</string>
+    <string name="Perritos_disponibles">Available Dogs</string>
+    <string name="Pagar_Paseo">Pay Walk</string>
+    <string name="Pagar_Paquete">Pay Package</string>
+
+    //Clase_Account//
+    <string name= "Completa_el_registro">Complete register</string>
+    <string name= "Nombre_Requerido">Name Required</string>
+    <string name= "Por_favor_llena_este_campo">Please fill in this field</string>
+    <string name= "Apellido_Paterno_Requerido">Last Name Required</string>
+    <string name= "Tu_cuenta_pobablemente_no_tiene_un_email_registrado">Your account probably does not have a register email</string>
+    <string name= "Telefono_requerido">Number Required</string>
+    <string name= "Por_favor_utiliza_la_clave_de_area">Please use your area code</string>
+    <string name= "Telefono_incorrecto">Wrong number</string>
+    <string name= "Espera_un_momento">Please wait </string>
+    <string name= "Subiendo_foto">Photo Uploading ...</string>
+    <string name= "Imagen_Actualizada_Exitosamente">Image Updated Successfully</string>
+    <string name= "Imagen_Subida_Exitosamente">Image Uploaded Successfully</string>
+    <string name= "Para_brindarte_un_mejor_servicio_es_necesario_llenar_algunos_datos">To provide you with a better service, it is neccessary to fill in some information</string>
+
+    //Clase_Account_No_Editable//
+    <string name= "No_se_pudo_revocar_el_acceso">Could not revoke access </string>
+
+    //AmpliarVigenciaRecuperandog//
+    <string name= "Para_continuar_es_necesario_que_ingreses_una_tarjeta">To continue its necessary to add your credit card </string>
+    <string name= "Da_clic_en_el_boton_de_agregar">Click on the add button</string>
+    <string name= "Estamos_tramitando_la_orden_de_pago_de_vigencia_para_tus_plaquitas">We are processing the valid payment order for your plates</string>
+    <string name=  "No_hubo_respuesta">There was no answer</string>
+    <string name=  "error_funcion_no_se_proceso_el_pago">Error function the payment was not processed</string>
+    <string name=  "Pago_no_realizado">Payment not made</string>
+    <string name=  "Compra_exitosa">Purchase was successful!</string>
+    <string name=   "La_vigencia_ha_sido_agregada_a_tus_plaquitas_GRACIAS_por_tu_compra">Charges have been added to your card, thank you for your payment!</string>
+
+    //Codigos_Fragment//
+    <string name=  "Codigo_no_ingresado">Code not entered</string>
+    <string name=  "Codigo_invalido">Invalid Code </string>
+    <string name=  "Solo_puedes_agregar_un_codigo_hasta_que_utilices_o_borres_el_cupon_activo">You can only add a code until you use or delete the active coupon</string>
+    <string name=  "El_codigo_de_promoción_no_es_valido_o_ha_caducado">The code entered has been previously used</string>
+    <string name=  "Codigo_no_aplicable">Code not applicable </string>
+    <string name=  "El_codigo_de_promoción_ya_se_ha_aplicado_anteriormente">The promo code has already been applied before </string>
+    <string name=  "Ingresa_un_Codigo">Enter a Code </string>
+    <string name=  "Debes_ingresar_un_codigo">You must enter your code </string>
+    <string name=  "El_codigo_de_promocion_solo_es_válido_para_nuevos_usuarios">The promo code is only valid for new users </string>
+    <string name=  "Codigo_valido">Valid Code </string>
+    <string name=  "Codigo_agregado_correctamente">Coupon was added correctly, remember that you will not be able to add another code until you use or delete this coupon</string>
+    <string name=  "Eliminar_cupon">Delete coupon </string>
+    <string name=  "Estas_seguro_de_que_deseas_eliminar_este_cupon">Are you sure you want to remove this coupon? Remember that this action cannot be undone</string>
+    <string name=  "Eliminado">Eliminate </string>
+    <string name=  "Cupon_eliminado_correctamente">Coupon removed successfully </string>
+    <string name=  "Permisos_Denegados">Permissions Denied</string>
+    <string name=  "Aplicado">Aplied</string>
+    <string name=  "Caminandog_podria_no_funcionar_correctamente">CaminanDog migth not to work correctly</string>
+
+
+    //Comprar_Recuperandog//
+    <string name=  "Estamos_tramitando_la_orden_de_pago_de_tus_plaquitas">We are processing the payment order for your plates </string>
+    <string name=  "Error_funcion_no_se_proceso_el_pago">There was an error processing your payment</string>
+    <string name=  "En_un_periodo_maximo_de_2_horas_te_contactaremos_para_informarte_sobre_el_envio_de_tus_plaquitas">In a maximum period of 2 hour we will contact you to inform you about the shipment of your plates, Thank you for your purchase! </string>
+    <string name=  "Tu_tarjeta_fue_ingresada_correctamente_ahora_puedes_utilizarla_para_hacer_feliz_a_tu_perrito">Your card was entered correctly, now you can use it to make your puppy happy</string>
+    <string name=  "Tu_tarjeta_no_se_pudo_agregar_por_favor_ingresa_otra">Your card could not be added, please enter another</string>
+    <string name=  "GPS_Desactivado">GPS Disabled</string>
+    <string name=  "Por_favor_activa_el_GPS_de_tu_dispositivo">Please turn your GPS on your device</string>
+    <string name=  "Activar">Activate</string>
+    <string name=  "Obtener_ubicacion">Get Location</string>
+    <string name=  "Recuerda_que_para_tener_una_precision_del_lugar_donde_requieres_tus_paseos">Remember that in order to hace a precision of the place where you require your walks(s) or use the functions fo your RecuperanDog badge, you need to share your location with CaminanDog</string>
+
+    //Configuracion_Paseo//
+    <string name=  "Sube_una_foto">Upload a photo.</string>
+    <string name=  "Como_quieres_realizar_esta_accion">How do you want to perform this action?</string>
+    <string name=  "Galeria">Gallery</string>
+    <string name=  "Camara">Camera</string>
+    <string name=  "No_se_pudo_subir_el_archivo">Could not upload the file</string>
+    <string name=  "Este_campo_no_puede_estar_vacio">This field can not be blank</string>
+    <string name=  "Cupon_Promocional">Promotional Coupon</string>
+    <string name=  "Si_tiene_vacunas">Yes has vaccinations</string>
+    <string name=  "No_tiene_vacunas">Not has vaccinations</string>
+    <string name=  "El_perfil_de">The profile of:</string>
+    <string name=  "Aun_no_cuenta_con_información_de_vacunas_en_su_perfil">Do not yet have vaccination information in his profile</string>
+    <string name=  "Estamos_tramitando_la_orden_de_pago_del_paquete_agendado_para">We are proccessing the payment order for the package scheduled for:</string>
+    <string name=  "Error">Error</string>
+    <string name=  "No_se_obtuvo_respuesta_del_servidor">No response from server</string>
+    <string name=  "En_un_periodo_máximo_de_2_horas">In a maximun period of two hours we will assign you a walker and your cards will be shown in the "Active walks" section, THANKS for your purchase!</string>
+    <string name=  "Ocurrio_un_error_al_procesar_el_pago">An error ocurred while proccessing the payment</string>
+    <string name=  "La_categoria_Sport_no_admite">The "Sport" category does not admit more than two selected puppies</string>
+    <string name=  "Modifica_tu_seleccion">Please modify your selection</string>
+    <string name=  "Para_continuar_debes_seleccionar_al_menos_un_perrito">To continue you must select at least one puppy</string>
+    <string name=  "Agrega_uno">Add one</string>
+    <string name=  "La_categoría_elegida_no_admite_más_de_4_perritos_seleccionados">The chosen category does not admit more than 4 selected puppies</string>
+    <string name=  "Agregar_cupon">Add Coupon</string>
+    <string name=  "Se_agregaria_el_registro">Record will be added</string>
+
+    //Contenedor_Fragment//
+    <string name=  "Cuenta">Account</string>
+    <string name=  "Mis_paseos">My Walks</string>
+
+    //Contenedor_Activos//
+    <string name= "Activos">Active</string>
+
+    //Comprar_RecuperanDog//
+    <string name="Hola">Hi  </string>
+    <string name="Le_brindo_una_sesion_de_aromaterapia">Provided an aromatherapy session for your pet(s)?</string>
+
+    //Contenedor_RecuperanDog//
+    <string name=  "Servicio_activo">Active Service</string>
+    <string name=  "Servicio_inactivo">Inactive Service</string>
+    <string name=  "Buscando">Searching</string>
+    <string name=  "Alerta">Alert</string>
+    <string name=  "Confirmar_vinculacion">Confirm Vinculation</string>
+    <string name=  "Estás_seguro_de_que_deseas_vincular_este_perrito">Are you sure you want to link this dog to this plate or badge? Once you accept you cannot undo it</string>
+    <string name=  "Ingresa_un_codigo_no_ocupado">Enter a code not busy</string>
+    <string name=  "Ingresa_un_codigo_valido">Enter a valid code</string>
+    <string name=  "Recuerda_que_para_escanear_la_paquita">Remember that to scan the plate of your dog you must accept the camera permission</string>
+    <string name=  "Recuerda_que_para_vincular_la_paquita_de_tu_perrito_deberás">Remember that to link your puppys plate you must accept the permission of the camera</string>
+
+    //Datos_Para_Contacto_Recuperando//
+    <string name=  "Ingresa_un_Nombre">Enter a Name</string>
+    <string name=  "Ingresa_un_numero_de_telefono_o_ingresa_al_menos_10_digitos">Enter a phone number or enter at least 10 digits</string>
+    <string name=  "Ingresa_una_direccion_de_correo_electronico_valida">Enter a valid email address</string>
+    <string name=  "Ingresa_un_Mensaje">Enter a Message</string>
+    <string name=  "El_mensaje_es_muy_largo">The message is too long</string>
+    <string name=  "Debe_seleccionar_para_actualizar">You must select to update</string>
+
+    //Formulario_Direccion//
+    <string name=  "Confirmar_Direccion">Confirm Address</string>
+
+    //Historic_Map//
+    <string name="Paseadorr">Walker: </string>
+    <string name=  "No_se_han_obtenido_datos">"No data obtained"</string>
+    <string name=  "Punto_de_recogida">Pick up point</string>
+    <string name=  "Permiso_de_ubicacion">Location permission</string>
+    <string name=  "Desea_activar_su_ubicacion">You want to activate your location?</string>
+    <string name=  "Permiso_negado">Permission denied</string>
+    <string name=  "Progreso">Progress</string>
+
+    //Historic_Paseo_Fragment/
+    <string name=  "Tiempo_pass">Tiempopas</string>
+    <string name="ID_paseo">Id Paseo: </string>
+    <string name="Categoriaa">Categoria: </string>
+    <string name="Numero_de_Perrhijos">Numero de Perrhijos: </string>
+    <string name="Calificacionn">Calificacion: </string>
+    <string name="Tiempoo">Tiempo: </string>
+
+    //login_Options//
+    <string name= "Ocurrio_un_error_al_tratar_de_ingresar">Ocurrio un error al tratar de ingresar."</string>
+    <string name="Acceso_denegado">Access Denied</string>
+    <string name="Tu_cuenta_de_Facebook_no_tiene_email">Your Facebook account does not have emil. To access you must create a CaminanDog account</string>
+    <string name="Probablemente_la_direccion_de_correo_vinculada_a_tu_cuenta_de_facebook">Probably the email address linked to your Facebook account is already in use</string>
+    <string name="No_se_pudo_iniciar_sesion">Could not login</string>
+    <string name="Permisos_denegados">Permissions Denied</string>
+
+    //Login_Activity//
+    <string name="Ingresa_un_email">Enter an email</string>
+    <string name="Ingresa_una_contraseña">Enter a password</string>
+    <string name="Por_Favor_Verifique_Su_email">Please verify your e-mail</string>
+
+    //Main_Activity//
+    <string name="Mi_Cuenta">My Account</string>
+    <string name="Estas_seguro_de_querer_salir">Are you sure you want to go out?</string>
+    <string name="Si">Yes</string>
+    <string name="Principal">Main</string>
+    <string name="Perrhijos">DogChilds</string>
+    <string name="Tarjetas">Cards</string>
+    <string name="Codigos">Codes</string>
+    <string name="Tarifas">Rates</string>
+    <string name="Aliados">Allies</string>
+    <string name="Esta_vacio">It is empty</string>
+    <string name="No_se_pudo_cerrar_sesion">Could not log out</string>
+
+    //Maps_Solic_Pas//
+    <string name=  "Buscandoo">Searching...</string>
+    <string name=  "Buscar_paseador">Search walker</string>
+    <string name=  "Intenta_mas_tarde_por_favor">Try later please</string>
+    <string name=  "No_hay_paseadores">There are no walkers</string>
+    <string name=  "Vacio_no_cambia_solicitud_ni_estatus">Empty does not change request or status</string>
+    <string name=  "Cambia_solicitud_y_estatus">Change request and status</string>
+    <string name=  "Arreglo_vacio">Empty Array</string>
+    <string name=  "No_pudimos_contactar_con_un_paseador_adecuado">We were unable to contact a suitable walker</string>
+    <string name=  "Quieres_repetir_la_busqueda">Do you want to repeat the search</string>
+    <string name=  "No_cambia_solicitud_y_estatus">Does not change request or status</string>
+    <string name=  "Paseador_actual_con_el_que_se_trabaja">Current walker you work with</string>
+    <string name=  "Aqui">Here</string>
+    <string name=  "Procesando_pago">Proccesing payment..</string>
+    <string name=  "El_servidor_rechazo_la_conexión">The server refused the connection please try again</string>
+    <string name=  "Pago_procesado_correctamente">Payment processed successfully</string>
+    <string name=  "Tiene_mas_perros">Have more dogs</string>
+    <string name=  "La_categoria_no_coincide">Category does not match</string>
+    <string name=  "Estamos_contactando_con_un_paseador">We are contacting a walker, in a moment we will go for:</string>
+    <string name=  "Yo">Me</string>
+    <string name=  "Punto_A">Point A</string>
+    <string name=  "Punto_B">Point B</string>
+    <string name=  "Editar">Edit</string>
+    <string name=  "Estas_seguro_de_eliminar_este_perrhijo">Are you sure you want to delete this dog?</string>
+    <string name=  "Eliminado_exitosamente">Succesfully deleted!</string>
+    <string name=  "Ocurrio_un_error">An error ocurred</string>
+    <string name=  "Recuerda_que_para_subir_una_foto_de_tu_perrito">Remember that to upload a photo of your puppy you must accept the permission of the camera</string>
+
+    //My_Firebase_Messaging_Service//
+    <string name=  "Asunto">Affair</string>
+
+    //Recuperandog_information//
+    <string name=  "Tel">Tel:</string>
+    <string name=  "Ubicacion_de">Location of: </string>
+    <string name=  "Reportado">Reported</string>
+    <string name=  "Placa">Plate </string>
+
+    //Reportado_Fragment//
+    <string name=  "El_extravio_de_tu_mascota">The loss of your pet linked to this plate has already been reported to all our walkers by when one finds it they will start the RecuperanDog process by scanning the plate. If you have already met your pet, you can finish the report of loss-</string>
+    <string name=  "Finalizar_reporte_de_extravio">Finalize the loss report</string>
+    <string name=  "Si_tu_mascota_vinculada">If your pet linked to this plate is missing, you can report its dissappearance so that all our walkers receive a search notification with the characteristic data of your pet and in this way they can search for it in their walking areas.</string>
+    <string name=  "Reportar_mascota_extraviada">Report missing pet</string>
+
+    //Reset_Password//
+    <string name=  "Ingresa_tu_email">Enter your e-mail</string>
+    <string name=  "Te_hemos_enviado">We have sent you the instructions to reset your password</string>
+    <string name=  "Fallo_el_envio">Sending reset email failed</string>
+
+    //Signup_Activity//
+    <string name=  "Repite_tu_contraseña">Repeat your password</string>
+    <string name=  "Las_contraseñas_no_coinciden">Password do not match</string>
+    <string name=  "Usuario_creado_exitosamente">User created successfully: </string>
+    <string name=  "Algo_fallo">Something wrong</string>
+    <string name=  "Registro_creado_exitosamente">Register created successfully</string>
+    <string name=  "Hemos_enviado_un_email_para_que_actives_tu_cuenta">We have sent you an email to activate your account</string>
+    <string name=  "Hubo_un_problema_al_crear_el_nuevo_registro">There was a problem creating the new register</string>
+
+    //Cards_fragment//
+    <string name=  "Problema">Problem </string>
+    <string name=  "Estas_seguro_de_eliminar_la_tarjeta">Are you sure you want to delete the card?</string>
+    <string name=  "Correcto">Correct</string>
+    <string name=  "Ocurrio_un_error_al_elminar_la_tarjeta">An error ocurred while deleting the card</string>
+
+    //Tracking//
+    <string name=  "Pagado">Paid</string>
+
+    //Tracking_Map//
+    <string name=  "Paseos_activos">Active Walks</string>
+    <string name=  "Tiempo_de_entregar_paseo_1_hr">Time to deliver ride</string>
+    <string name=  "Tiempo_de_entregar_paseo_2_hr">Tiempo de entregar paseo 2hr</string>
+    <string name=  "Recuerda_que_para_tener_comunicacion_por_telefono">Remember that un order to have communication by phone with your walker you must accept the call permission</string>
+
+    //Fragment_datos_para_contacto_recuperandog//
+    <string name=  "Celular">Telephone</string>
+    <string name=  "Correo">Email</string>
+    <string name=  "Datos_para_contacto">Contact Information</string>
+    <string name=  "Actualizar">Update</string>
+    <string name=  "Mensaje_Hasta_280_caracteres">Message(Up to 280 characters)</string>
+    <string name=  "Al_dar_clic_en_esta_casilla">By clicking on this box you authorize CaminanDog to share this data every time your puppy´s tag is scanned, if they are empty they will not be able to contact you or report on their status</string>
+
+    //Fragment_no_edit_account_fragmnt//
+    <string name=  "Dia">Day</string>
+    <string name=  "Mes">Month</string>
+    <string name=  "Año">Year</string>
+
+    //Fragmnet_ampliar_vigencia//
+    <string name=  "Agregar_tarjeta">Add Card</string>
+    <string name=  "Pagar_placas">Pay Plates</string>
+    <string name=  "Selecciona_tu_tarjeta">Select your card</string>
+    <string name=  "Total_a_pagarr">Total to pay</string>
+    <string name=  "Ampliar_vigencia">Extend Validity</string>
+    <string name=  "Perrito_vinculado">Linked puppy</string>
+    <string name=  "Vigencia_actual">Current validity</string>
+    <string name=  "Precio_por_unidad">Price p/u</string>
+
+    //Fragmnet_comprar_recuperandog//
+    <string name=  "Cargando">Uploading...</string>
+    <string name=  "Indicanos_cual_es_la_direccion_de_entrega">Tell us what is the delivery address</string>
+    <string name=  "Ingresa_la_calle_o_el_nombre_del_lugar">Enter street or place name</string>
+    <string name=  "Ingresa_el_numero_interior">Enter the interior number; department or detail</string>
+    <string name=  "Costo_de_envio">Sending cost</string>
+
+    //Fragmnet_codigos//
+    <string name=  "Cupones">Coupons</string>
+    <string name=  "Invita_a_todos_tus_contactos">Invite your contacts to the CaminanDog experience</string>
+    <string name=  "Tu_codigo_promocional_es">Your promotional code is</string>
+    <string name=  "Compartir">Share</string>
+    <string name=  "Proximamente_disponible_para_todos_nuestros_usuarios">Soon available for all our users</string>
+    <string name=  "Descripcion">Description</string>
+
+    //Dialog_write_confirm//
+    <string name=  "Enviado_exitosamente">Successfully Sent</string>
+    <string name=  "Tus_datos_se_han_enviado_correctamente">Your data has been sent successfully</string>
+
+    //Dialog_add_casa//
+    <string name=  "Agregar_tu_casa">Add your House</string>
+
+    //Dialog_vincular_surface//
+    <string name=  "Escanea_la_placa_de_Recuperandog_que_deseas_vincular">Scan the RecuperanDog plate that you want to link</string>
+
+    //Elemento_paseos_activos//
+    <string name=  "ID_Paseo">ID WALK</string>
+    <string name=  "CATEGORÍA">CATEGORY</string>
+    <string name=  "FECHA">DATE</string>
+    <string name=  "fecha">date</string>
+    <string name=  "PASEADOR">WALKER</string>
+    <string name=  "paseador">walker</string>
+    <string name=  "PERROS">DOGS</string>
+    <string name=  "perros">perros</string>
+    <string name=  "NUM_PERROS">NUM DOGS</string>
+    <string name=  "num_perros">dogsnumber</string>
+
+    //form_direccion//
+    <string name=  "Numero_Exterior">Outdoor Number</string>
+    <string name=  "Numero_Interior">Interior Number</string>
+    <string name=  "Calle">Street</string>
+    <string name=  "Municipio_o_Delegacion">Municipality or Delegation</string>
+    <string name=  "Estado">State</string>
+    <string name=  "Codigo_Postal">Postal Code</string>
+
+    //fragment_contenedor_recuperandog//
+    <string name=  "Escribe_tu_información">Write your information</string>
+    <string name=  "Mascotas_con_placa">Pets with Plate</string>
+    <string name=  "Vincular_Placa">Link Plate</string>
+    <string name=  "Ampliar_Vigencia">Extend Validity</string>
+    <string name=  "Comprar_Placa">Buy Plate</string>
+    <string name=  "Leer_Código">Read Code</string>
+    <string name=  "Datos_Para_Contacto">Contact Information</string>
+
+    //Fragment_Inicio//
+    <string name=  "Solicitar_Paseo">Request Walk</string>
+    <string name=  "Agendar_Paseo">Scheduled Walk</string>
+    <string name=  "Donde_se_encuentra_tu_perrito">Where is your puppy?</string>
+    <string name=  "Casa">House</string>
+    <string name=  "Define_una_ubicacion">Define an address</string>
+    <string name=  "Ultimo">Latest</string>
+    <string name=  "Solicita_un_paseo">Request a Walk</string>
+    <string name=  "Para_una_mejor_experiencia">For a better experience. Please turn on the GPS sensor of your device</string>
+
+    //Fragment_mis_perritos//
+    <string name=  "Para_editar_o_eliminar">To edit or remove a dog, tap its tab. To add a dog touch the + button</string>
+
+    //Fragment_recuperandog_informacion//
+    <string name=  "Reportar">Report</string>
+    <string name=  "Nombre_de_perrito">Puppy Name</string>
+    <string name=  "Fecha_de_vigencia">Validity Date</string>
+    <string name=  "Fecha_y_hora_de_ultima_lectura">Last read date and time</string>
+    <string name=  "Direccion_de_lectura">Reading direction</string>
+    <string name=  "Nombre_del_lector">Reader name</string>
+    <string name=  "Mensaje_enviado">Message sent</string>
+    <string name=  "Mensaje">Menssage</string>
+    <string name=  "Llamar">Call</string>
+
+    //Fragment_Reportado//
+    <string name=  "Reportar_Mascota">Report Pet</string>
+    <string name=  "Nombre_Perro">puppy name</string>
+    <string name=  "No_placa">Num. of Plate</string>
+
+    //Fragment_tracking//
+    <string name=  "Categoría">Category</string>
+    <string name=  "Tiempo_recorrido">Time travel</string>
+    <string name=  "De">Of</string>
+
+
+
+
+</resources>

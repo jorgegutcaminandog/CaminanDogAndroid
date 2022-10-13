@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dialog_calif_up"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Califica_tu_último_paseo_de"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CaminanDog"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:theme="@style/MyRatingBarTwo"
+
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:progressDrawable="@drawable/rating_selector"
+                app:layout_constraintBottom_toTopOf="@+id/textViewedad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:background="@color/azul_caminandog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Cuanto_disfrutó_de_su_paseo"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nombreperrcalif"
+                android:background="@color/azul_caminandog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_calif_down"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Dinos_mas_sobre_la_experiencia_CaminanDog_y_sobre_tu_paseador"
+                android:textColor="@color/black"
+                android:textColorLink="@color/colorAccent"
+                android:textSize="18sp" />
+
+
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/imageView_walker"
+                android:layout_width="96dp"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+
+                app:srcCompat="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/total_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Paseador"
+                android:textColor="@color/black"
+                android:textColorLink="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <LinearLayout
+
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/si"></TextView>
+                    <TextView
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/o"></TextView>
+                    <TextView
+                        android:paddingRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingBottom="15dp"
+                    android:layout_gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Llegó_en_forma_y_a_tiempo_por_tus_mascotas"></TextView>
+                    <RadioGroup
+                        android:gravity="right|center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:buttonTint="@color/azul_caminandog"
+                            android:id="@+id/p1siRadio"
+                            android:paddingRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ></RadioButton>
+
+                        <RadioButton
+                            android:buttonTint="@color/azul_caminandog"
+                            android:id="@+id/p1noRadio"
+                            android:paddingRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ></RadioButton>
+
+                        ></RadioGroup>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:paddingBottom="15dp"
+                    android:layout_gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Llegó_con_playera_sudadera_y_gorra_de_CaminanDog"></TextView>
+                    <RadioGroup
+
+                        android:gravity="right|center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:buttonTint="@color/azul_caminandog"
+                            android:id="@+id/p2siRadio"
+                            android:paddingRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ></RadioButton>
+
+                        <RadioButton
+                            android:buttonTint="@color/azul_caminandog"
+                            android:id="@+id/p2noRadio"
+                            android:paddingRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ></RadioButton>
+
+                        ></RadioGroup>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingBottom="15dp"
+                    android:layout_gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Le_brindo_una_sesion_de_aromaterapia"></TextView>
+                    <RadioGroup
+                        android:gravity="right|center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:buttonTint="@color/azul_caminandog"
+                            android:id="@+id/p3siRadio"
+                            android:paddingRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ></RadioButton>
+
+                        <RadioButton
+                            android:buttonTint="@color/azul_caminandog"
+                            android:id="@+id/p3noRadio"
+                            android:paddingRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            ></RadioButton>
+
+                        ></RadioGroup>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/ENVIAR"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

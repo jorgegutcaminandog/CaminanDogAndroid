@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+
+
+    >
+
+    <LinearLayout
+        android:background="@drawable/dialog_rounded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.80"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/title_dialod"
+                android:layout_width="match_parent"
+
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:gravity="center"
+                android:text="@string/Eliminar"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/subtitle_dialod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+
+                android:text="@string/Deseas_eliminar_la_cedula"></TextView>
+
+        </LinearLayout>
+
+        <EditText
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/insert_text_dialog"
+            android:background="@drawable/square_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_nel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:text="@string/CANCELAR"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textAllCaps="false"></Button>
+
+
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:text="@string/Aceptar"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textAllCaps="false"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

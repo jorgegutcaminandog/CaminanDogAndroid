@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#E1DFDF</color>
+    <color name="colorAccent">#000000</color>
+    <color name="gray_text_box">#BBBBBB</color>
+    <color name="trans">#80000000</color>
+    <color name="transparente">#7F000000</color>
+
+    <color name="gris_caminandog">#707070</color>
+
+    <color name="separator">#BBBBBB</color>
+
+    <color name="statusbar_blue">#22C9EE</color>
+
+    <color name="amarillo_caminandog">#FFCE3E</color>
+
+    <color name="recup_yellow">#FFE633</color>
+
+    <color name="azul_caminandog">#00B0C5</color>
+
+    <color name="gris_azulado">#EBEFF1</color>
+
+    <color name="gris_recuperandog">#f0e8e2</color>
+
+    <color name="gris_texto">#707070</color>
+
+    <color name="azul_texto_btn">#007AFF</color>
+
+    <color name="verde_texto_payment">#21853C</color>
+
+    <color name="color_fichas">#BBFCFF</color>
+
+    <color name="color_texto_cup">#7e7e7e</color>
+
+    <color name="color_texto_cup_azul">#002EAC</color>
+    <color name="color_texto_cup_verde">#21853C</color>
+
+    <color name="Black0Percent">#00000000</color>
+
+
+
+
+
+
+    <color name="bg_login">#26ae90</color>
+
+    <color name="bg_register">#2e3237</color>
+
+    <color name="bg_main">#428bca</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+
+    <color name="input_login">#222222</color>
+
+    <color name="input_login_hint">#999999</color>
+
+    <color name="input_register">#888888</color>
+
+    <color name="input_register_bg">#3b4148</color>
+
+    <color name="input_register_hint">#5e6266</color>
+
+    <color name="btn_login">#26ae90</color>
+
+    <color name="btn_login_bg">#eceef1</color>
+
+    <color name="lbl_name">#333333</color>
+
+    <color name="btn_logut_bg">#EE0000</color>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Options"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.60"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05" />
+
+                <Button
+                    android:id="@+id/button_qr"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/qrbtn"
+                     />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_options"
+android:layout_gravity="center"
+
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+
+                app:srcCompat="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/btn_propio"
+                android:layout_width="205dp"
+                android:layout_height="38dp"
+                android:background="@drawable/continuar_caminandog"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_google_signin"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                >
+
+            </com.google.android.gms.common.SignInButton>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/btn_fb_signin"
+                    android:layout_width="202dp"
+                    android:layout_height="36dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_uso"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.10"
+
+                android:background="@null"
+                android:text="@string/Al_usar_Caminandog_aceptas_la_politica_de_privacidad"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="166dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

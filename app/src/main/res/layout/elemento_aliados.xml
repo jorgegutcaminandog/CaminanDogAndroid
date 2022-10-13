@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_fichas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:id="@+id/title_aliados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="titulo"></TextView>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/img_aliados"
+            android:layout_width="623px"
+            android:layout_height="471px"
+
+            android:src="@drawable/ic_pipi_usuario"></ImageView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

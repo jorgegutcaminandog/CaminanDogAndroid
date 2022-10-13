@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "684616064893",
+    "firebase_url": "https://caminandog-218818.firebaseio.com",
+    "project_id": "caminandog-218818",
+    "storage_bucket": "caminandog-218818.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684616064893:android:30b53984ebe1e15a",
+        "android_client_info": {
+          "package_name": "com.example.mcmhu.prueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684616064893-jiflhqs6h1np6t1etscnjjusoebb4oa1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mcmhu.prueba",
+            "certificate_hash": "076c22b091710f0707f609630f95301e4c352272"
+          }
+        },
+        {
+          "client_id": "684616064893-3797q02c2i4uk58pei0pi6ds2igngd7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzVCOxZQYQuMrA6lfgJC8hOM0zyYcasdY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684616064893-3797q02c2i4uk58pei0pi6ds2igngd7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684616064893-1qht8d44a3ft8qtnsrhq520uu3vvq5rf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Humaniia.CaminandogPaseadores"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684616064893:android:6f484a3f3d635fd5",
+        "android_client_info": {
+          "package_name": "mx.com.caminandog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684616064893-rvqjotoskppa3cr433pc293r3vo3agku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.com.caminandog",
+            "certificate_hash": "4e3ac173258938f769d91b6f81efb191591ff679"
+          }
+        },
+        {
+          "client_id": "684616064893-3797q02c2i4uk58pei0pi6ds2igngd7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzVCOxZQYQuMrA6lfgJC8hOM0zyYcasdY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684616064893-3797q02c2i4uk58pei0pi6ds2igngd7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684616064893-1qht8d44a3ft8qtnsrhq520uu3vvq5rf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Humaniia.CaminandogPaseadores"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

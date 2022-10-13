@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Configuracion_Paseo">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapaView_prototipo"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.40"></com.google.android.gms.maps.MapView>
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="0.60">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/separator"
+                android:textColor="@color/black"
+                android:textSize="0.1sp" />
+
+            <LinearLayout
+
+                android:id="@+id/linear1"
+
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.10"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Define_el_paseo"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/separator"
+                    android:textColor="@color/black"
+                    android:textSize="0.1sp" />
+
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="left|center"
+                        android:text="@string/Tiempo"
+                        android:textAllCaps="false"
+                        android:textColor="@color/azul_caminandog"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:shadowColor="@color/white"
+                        android:textSize="13sp"/>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"/>
+
+                    <Button
+                        android:id="@+id/btn_media"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="30 min"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:shadowColor="@color/white"
+
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"/>
+
+
+
+                    <Button
+                        android:id="@+id/btn_uno"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="1 h"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:shadowColor="@color/white"
+
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"/>
+
+                    <Button
+                        android:id="@+id/btn_noventa"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:text="90 min"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:shadowColor="@color/white"
+
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"/>
+
+
+                    <Button
+                        android:id="@+id/btn_dos"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="2 h"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/separator"
+                    android:textSize="0.1sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.16"
+                    android:gravity="center"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="left|center"
+                        android:text="@string/Perritos"
+                        android:textAllCaps="false"
+                        android:textColor="@color/azul_caminandog"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:shadowColor="@color/white"
+                        android:textSize="13sp"/>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.50"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/Agregar"
+                            android:gravity="bottom"
+                            android:textColor="@color/azul_caminandog" />
+
+
+                        <ImageButton
+                            android:id="@+id/btn_add_dog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:src="@drawable/img_agregar_perroxxxhdpi"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recper3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.44"
+                    android:outlineAmbientShadowColor="@color/quantum_grey"
+                    android:outlineSpotShadowColor="@color/colorPrimary"></androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/separator"
+                    android:textColor="@color/black"
+                    android:textSize="0.1sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="@string/Categoria"
+                    android:textColor="@color/azul_caminandog"
+                    android:textSize="13sp" />
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.20"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_conf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/separator"
+                android:textSize="0.1sp" />
+
+            <LinearLayout
+                android:id="@+id/linear2"
+android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/separator"
+                    android:textSize="0.1sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.10"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/back_btn_conf"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.30"
+                        android:background="@color/white"
+                        android:drawableStart="@drawable/quantum_ic_arrow_back_grey600_24"
+                        android:drawablePadding="15dp"
+                        android:outlineAmbientShadowColor="@color/white"
+                        android:outlineSpotShadowColor="@color/white"
+                        android:paddingStart="18dp"
+                        android:shadowColor="@color/white"
+                        android:text="@string/Atras"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.45"
+
+                        android:gravity="center"
+                        android:outlineAmbientShadowColor="@color/white"
+
+                        android:outlineSpotShadowColor="@color/white"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="@string/Pago_de_paseo"
+                        android:textColor="@color/azul_caminandog"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+                        android:outlineAmbientShadowColor="@color/white"
+                        android:outlineSpotShadowColor="@color/white"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/azul_caminandog"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/separator"
+                    android:textSize="0.1sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:paddingLeft="25dp"
+                                android:id="@+id/txt_payment_1st"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:textSize="12sp"
+                                android:text="@string/perritos_tiempo_paseo" />
+
+                            <TextView
+                                android:id="@+id/txt_payment_2nd"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="25dp"
+                                android:textSize="12sp"
+                                android:text="@string/Categoria_dias" />
+
+                            <TextView
+                                android:id="@+id/textView_tipopago"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="25dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/color_texto_cup"
+                                android:text="@string/Descuento" />
+
+                            <TextView
+                                android:id="@+id/textView_tiempopago"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:paddingLeft="0dp"
+                                android:drawableLeft="@drawable/ic_img_cupon"
+                                android:drawablePadding="4dp"
+                                android:text="@string/Cupón_Promocional"
+                                android:textColor="@color/color_texto_cup"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:paddingLeft="25dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/separator"
+                                android:textSize="0.1sp" />
+
+                            <TextView
+                                android:id="@+id/textView_descuentopago"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:textSize="12sp"
+                                android:paddingLeft="25dp"
+                                android:text="@string/Subtotal" />
+
+                            <TextView
+                                android:id="@+id/textView_ivapago"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:gravity="center|left"
+                                android:textSize="12sp"
+                                android:paddingLeft="25dp"
+                                android:text="IVA" />
+
+                            <TextView
+                                android:paddingLeft="25dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/separator"
+                                android:textSize="0.1sp" />
+
+                            <TextView
+                                android:id="@+id/textView_ivapgggago"
+                                android:layout_width="match_parent"
+                                android:textSize="12sp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:paddingLeft="25dp"
+                                android:text="@string/Total_a_pagar" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingRight="30dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/txt_glob_cost_payment"
+                                android:layout_width="match_parent"
+                                android:textSize="12sp"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:gravity="right"
+                                android:paddingLeft="10dp"
+                                android:text="MXN $###.##" />
+
+                            <TextView
+                                android:id="@+id/textView_perrosffpago"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:paddingLeft="10dp" />
+
+                            <TextView
+                                android:id="@+id/txt_descuento_payment"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:textSize="12sp"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/color_texto_cup"
+                                android:text="-MXN $###.##" />
+
+                            <TextView
+                                android:id="@+id/textView_tiempoffpago"
+                                android:layout_width="match_parent"
+                                android:textSize="12sp"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:gravity="right"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/color_texto_cup"
+                               />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/separator"
+                                android:textSize="0.1sp" />
+
+                            <TextView
+                                android:id="@+id/txt_subtotal_payment"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textSize="12sp"
+                                android:gravity="center|right"
+                                android:paddingLeft="10dp"
+                                android:text="MXN $###.##" />
+
+                            <TextView
+                                android:id="@+id/txt_iva_payment"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:gravity="center|right"
+                                android:textSize="12sp"
+                                android:paddingLeft="10dp"
+                                android:text="MXN $###.##" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/separator"
+                                android:textSize="0.1sp" />
+
+                            <TextView
+                                android:id="@+id/txt_total_payment"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:textSize="12sp"
+                                android:layout_weight="1"
+                                android:gravity="center|right"
+                                android:textColor="@color/black"
+                                android:paddingLeft="10dp"
+                                android:text="MXN $###.##" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/separator"
+                    android:textSize="0.1sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.40"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.50"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.50"
+                                android:gravity="bottom"
+                                android:paddingLeft="20dp"
+                                android:text="@string/Tarjeta"
+                                android:textColor="@color/azul_caminandog"></TextView>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="top"
+                            android:text="@string/selecciona_tu_tarjeta" />
+
+                        <Spinner
+                            android:id="@+id/spinner_services"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.50"
+                            android:paddingLeft="20dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.50"
+                        android:orientation="vertical"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="60dp"
+                            android:paddingBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/Añadir"
+                                android:gravity="bottom"
+                                android:textColor="@color/azul_caminandog" />
+
+
+                            <ImageButton
+                                android:id="@+id/scan_btn_conf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:src="@drawable/img_agregar_tarjetaxxxhdpi"
+                                android:gravity="center" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <Button
+                            android:id="@+id/btn_pagar"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50"
+                            android:background="@drawable/rounded_button"
+                            android:backgroundTint="@color/azul_caminandog"
+                            android:drawableStart="@drawable/img_pagar_paseoxxxhdpi"
+                            android:paddingLeft="10dp"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="96dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

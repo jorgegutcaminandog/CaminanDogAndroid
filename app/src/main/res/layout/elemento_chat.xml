@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_msg_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:autoLink="web"
+            android:id="@+id/msj_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:padding="15dp"/>
+
+
+        <TextView
+            android:autoLink="web"
+            android:id="@+id/msj_chat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"/>
+
+
+        <TextView
+            android:id="@+id/name_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msj_chat"
+            android:text=""
+            android:paddingLeft="5dp"
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/name_chat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msj_chat2"
+            android:layout_alignEnd="@+id/msj_chat2"
+            android:text=""
+            android:paddingRight="5dp"
+            android:textSize="11dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

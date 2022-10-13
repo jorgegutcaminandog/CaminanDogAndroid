@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../Library/Android/sdk/platforms/android-30/data/res/layout/simple_spinner_dropdown_item.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/drawable/ic_aliados.xml" value="0.2985" />
+        <entry key="app/src/main/res/drawable/ic_chat_inicio.xml" value="0.2985" />
+        <entry key="app/src/main/res/drawable/ic_img_utilizado_cupon.xml" value="0.2985" />
+        <entry key="app/src/main/res/layout/activity__configuracion_paseo.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_account.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_account__no__editable.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_lector_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_login__options.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_maps__solic__pas.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_perros__adapter.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_reset_password.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_tipo__paseo.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_tracking.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/card_pipi_popo.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/content_perros__adapter.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_add_casa.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_add_perro.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_add_vacunas.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_agenda.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_agregar_cupon.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_calif.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_chat_list.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_chat_soporte.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_chat_tracking.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_complete_register.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_confirmar.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_elim_card.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_info_agenda.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_procesando.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_select_perro.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_si_no.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_vincular_placa.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_vincular_surface.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/dialog_write_confirm.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_aliados.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_card.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_card_pagos.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_categoria.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_chat.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_chat_list.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_date_paquetes.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_dia_agenda.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_historic_paseo.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_lista_codigos.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_lista_perros.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_lista_perros2_recuperandog.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_lista_perros_recuperandog.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_lista_perros_recuperandogcompravig.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_lista_select_perro.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_paseos_activos.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/elemento_time.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/form_direccion.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_aliados.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_ampliar_vigencia_recuperandog.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_cards_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_codigos_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_comprar_recuperandog.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_contenedor_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_contenedor_activos.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_contenedor_recuperandog.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_datos_para_contacto_recuperandog.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_historic__paseo__fragmnt.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_inicio_.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/fragment_mis_perros_.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_no_edit__account__frgmnt.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_paseadores_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_paseos__activos_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_perrhijos__recuperandog_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_recuperandog__informacion_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_reportado_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_tacking_map.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_tarifas_.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/spinner_custom_cards.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/spinners.xml" value="0.3591485507246377" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

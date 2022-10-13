@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    android:outlineAmbientShadowColor="@android:color/black"
+    android:outlineSpotShadowColor="@android:color/black"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_card_type_pagos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp" />
+
+        <TextView
+            android:id="@+id/card_num_pagos"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="78dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/edit_card"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="21dp"
+            android:background="@android:drawable/ic_menu_delete"
+            android:foregroundGravity="center"
+            android:scaleX="2"
+            android:scaleY="2" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

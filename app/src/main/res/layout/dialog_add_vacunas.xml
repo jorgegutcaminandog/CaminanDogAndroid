@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_roundes_sides_sticked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:text="@string/CANCELAR"
+                android:textColor="@color/azul_texto_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="#00FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="115dp"
+                tools:layout_editor_absoluteY="410dp"
+                />
+
+
+            <TextView
+                android:id="@+id/txt_edit_member"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.60"
+                android:gravity="center"
+                android:text="@string/Vacunas"
+                android:textColor="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="@string/Guardar"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="@color/azul_texto_btn"
+                android:textAllCaps="false"
+                android:background="#00FFFFFF"
+                tools:layout_editor_absoluteX="115dp"
+                tools:layout_editor_absoluteY="410dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/separator"
+            android:textSize="0.1sp"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_marginBottom="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Datos"
+            android:textColor="@color/azul_caminandog"
+            android:textSize="18sp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="05dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/separator"
+            android:textSize="0.1sp"/>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_weight="1" />
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="05dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewdesparasitado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/Esta_desparasitado"
+                            android:textColor="@color/colorAccent" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="05dp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/sp_desparasitado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:outlineAmbientShadowColor="@color/colorAccent"
+                            android:outlineSpotShadowColor="@color/colorAccent" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/separator"
+                        android:textSize="0.1sp"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="05dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/De_las_vacunas_polivalentes_cuenta_con"
+                        android:textColor="@color/colorAccent" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="05dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView1radosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/Primera_dosis"
+                            android:textColor="@color/colorAccent" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="05dp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/sp_1radosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:outlineAmbientShadowColor="@color/colorAccent"
+                            android:outlineSpotShadowColor="@color/colorAccent" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/separator"
+                        android:textSize="0.1sp"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="05dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2dadosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/Segunda_dosis"
+                            android:textColor="@color/colorAccent" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="05dp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/sp_2dadosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:outlineAmbientShadowColor="@color/colorAccent"
+                            android:outlineSpotShadowColor="@color/colorAccent" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/separator"
+                        android:textSize="0.1sp"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="05dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3radosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/Tercera_dosis"
+                            android:textColor="@color/colorAccent" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="05dp"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/sp_3radosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:outlineAmbientShadowColor="@color/colorAccent"
+                            android:outlineSpotShadowColor="@color/colorAccent" />
+                    </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/separator"
+                    android:textSize="0.1sp"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
