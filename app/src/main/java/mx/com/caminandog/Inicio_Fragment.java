@@ -476,7 +476,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
 
                     nombre.setText(getResources().getString(R.string.Hola) + usuario.getNombre());
-
+//
                     direccion_casa = usuario.getDireccion();
                     latitud_casa = usuario.getLatitud();
                     longitud_casa = usuario.getLongitud();
