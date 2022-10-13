@@ -485,7 +485,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
                     if (direccion_casa == null) {
 
-                        btn_casa.setText("Define una dirección.");
+                        btn_casa.setText(getResources().getString(R.string.Define_una_ubicacion));
 
                     } else {
 
