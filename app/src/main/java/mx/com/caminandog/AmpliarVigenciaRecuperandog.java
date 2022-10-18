@@ -340,7 +340,7 @@ public class AmpliarVigenciaRecuperandog extends Fragment {
                                                 android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder ( getActivity() );
                                                 builder.setTitle (getResources().getString(R.string.Pago_no_realizado));
                                                 builder.setMessage ( res_message );
-                                                builder.setPositiveButton ((getResources().getString(R.string.Aceptar)) ,new DialogInterface.OnClickListener () {
+                                                builder.setPositiveButton (getResources().getString(R.string.Aceptar) ,new DialogInterface.OnClickListener () {
                                                     @Override
                                                     public void onClick(DialogInterface dialog ,int which) {
                                                         //progressBar.setVisibility( View.INVISIBLE );
@@ -387,10 +387,10 @@ public class AmpliarVigenciaRecuperandog extends Fragment {
                                                     handler.postDelayed(new Runnable() {
                                                         public void run() {
                                                             new AlertDialog.Builder(getActivity())
-                                                                    .setTitle((getResources().getString(R.string.Compra_exitosa)))
-                                                                    .setMessage((getResources().getString(R.string.La_vigencia_ha_sido_agregada_a_tus_plaquitas_GRACIAS_por_tu_compra)))
+                                                                    .setTitle(getResources().getString(R.string.Compra_exitosa))
+                                                                    .setMessage(getResources().getString(R.string.La_vigencia_ha_sido_agregada_a_tus_plaquitas_GRACIAS_por_tu_compra))
                                                                     .setCancelable(false)
-                                                                    .setPositiveButton((getResources().getString(R.string.Aceptar)), new DialogInterface.OnClickListener() {
+                                                                    .setPositiveButton(getResources().getString(R.string.Aceptar), new DialogInterface.OnClickListener() {
                                                                         public void onClick(DialogInterface dialog, int id) {
                                                                             dialog.dismiss();
                                                                             dialog_x.dismiss();

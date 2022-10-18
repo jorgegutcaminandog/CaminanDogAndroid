@@ -215,7 +215,7 @@ public class Cards_Fragment extends Fragment {
                         final ProgressBar prog = ((ProgressBar) mView.findViewById(R.id.progres_elim));
                         prog.setVisibility( View.INVISIBLE );
                         title.setVisibility( View.INVISIBLE );
-                        resultt.setText( (getResources().getString(R.string.Estas_seguro_de_eliminar_la_tarjeta)) );
+                        resultt.setText(getResources().getString(R.string.Estas_seguro_de_eliminar_la_tarjeta)) ;
                         final AlertDialog dialog = mBuilder.create();
                         dialog.getWindow().setBackgroundDrawable(new ColorDrawable( Color.TRANSPARENT));
                         dialog.show();
@@ -285,7 +285,7 @@ public class Cards_Fragment extends Fragment {
                                                     System.out.println("resp "+resp);
 
 
-                                                    if (resp.equals( (getResources().getString(R.string.Correcto)))){
+                                                    if (resp.equals(getResources().getString(R.string.Correcto))){
 
                                                         this.runOnUiThread( new Runnable() {
                                                             public void run() {

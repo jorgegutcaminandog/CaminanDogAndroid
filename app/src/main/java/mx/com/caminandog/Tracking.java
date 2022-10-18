@@ -301,7 +301,7 @@ public class Tracking extends AppCompatActivity {
 
 
 
-                                System.out.println((getResources().getString(R.string.Pagado)));
+                                System.out.println(getResources().getString(R.string.Pagado));
                                 editor.clear().commit();
 
 

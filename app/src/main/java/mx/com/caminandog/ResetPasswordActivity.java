@@ -49,7 +49,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
 
                 if (TextUtils.isEmpty(email)) {
 
-                    inputEmail.setError((getResources().getString(R.string.Ingresa_tu_email)));
+                    inputEmail.setError(getResources().getString(R.string.Ingresa_tu_email));
                     return;
                 }
 

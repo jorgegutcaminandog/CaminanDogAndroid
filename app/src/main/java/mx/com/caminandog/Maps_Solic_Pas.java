@@ -311,9 +311,9 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
 
                             AlertDialog.Builder builder = new AlertDialog.Builder(Maps_Solic_Pas.this);
 
-                            builder.setTitle((getResources().getString(R.string.Buscar_paseador)));
-                            builder.setMessage((getResources().getString(R.string.Intenta_mas_tarde_por_favor)));
-                            builder.setPositiveButton((getResources().getString(R.string.Aceptar)), new DialogInterface.OnClickListener() {
+                            builder.setTitle(getResources().getString(R.string.Buscar_paseador));
+                            builder.setMessage(getResources().getString(R.string.Intenta_mas_tarde_por_favor));
+                            builder.setPositiveButton(getResources().getString(R.string.Aceptar), new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     //Buscar();
@@ -326,7 +326,7 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
                             timer.cancel();
 
 
-                            System.out.println((getResources().getString(R.string.No_hay_paseadores)));
+                            System.out.println(getResources().getString(R.string.No_hay_paseadores));
                         }
                     });
 
@@ -382,9 +382,9 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
 
         if (ultimaLlave.isEmpty()) {
 
-            System.out.println((getResources().getString(R.string.Vacio_no_cambia_solicitud_ni_estatus)));
+            System.out.println(getResources().getString(R.string.Vacio_no_cambia_solicitud_ni_estatus));
         } else {
-            System.out.println((getResources().getString(R.string.Cambia_solicitud_y_estatus)));
+            System.out.println(getResources().getString(R.string.Cambia_solicitud_y_estatus));
             int solicitud = 0;
             int estatus = 0;
             Pasref.child(ultimaLlave).child("estatus").setValue(estatus);
@@ -399,7 +399,7 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
 
 
         } catch (Exception e) {
-            System.out.println((getResources().getString(R.string.Arreglo_vacio)));
+            System.out.println(getResources().getString(R.string.Arreglo_vacio));
         }
 
 
@@ -493,10 +493,10 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
                     timer.cancel();
                     AlertDialog.Builder builder = new AlertDialog.Builder(Maps_Solic_Pas.this);
                     builder.setCancelable(false);
-                    builder.setTitle((getResources().getString(R.string.Buscar_paseador)));
-                    builder.setMessage((getResources().getString(R.string.No_pudimos_contactar_con_un_paseador_adecuado)));
-                    builder.setMessage((getResources().getString(R.string.Quieres_repetir_la_busqueda)));
-                    builder.setPositiveButton((getResources().getString(R.string.Aceptar)), new DialogInterface.OnClickListener() {
+                    builder.setTitle(getResources().getString(R.string.Buscar_paseador));
+                    builder.setMessage(getResources().getString(R.string.No_pudimos_contactar_con_un_paseador_adecuado));
+                    builder.setMessage(getResources().getString(R.string.Quieres_repetir_la_busqueda));
+                    builder.setPositiveButton(getResources().getString(R.string.Aceptar), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             finish();
@@ -506,7 +506,7 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
 
                         }
                     });
-                    builder.setNegativeButton((getResources().getString(R.string.Cancelar)), new DialogInterface.OnClickListener() {
+                    builder.setNegativeButton(getResources().getString(R.string.Cancelar), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
@@ -618,10 +618,10 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
 
 
                                     } catch (Exception e) {
-                                        System.out.println((getResources().getString(R.string.No_cambia_solicitud_y_estatus)) + e);
+                                        System.out.println(getResources().getString(R.string.No_cambia_solicitud_y_estatus) + e);
                                     }
 
-                                    System.out.println( (getResources().getString(R.string.Paseador_actual_con_el_que_se_trabaja))+ onlyKey);
+                                    System.out.println( getResources().getString(R.string.Paseador_actual_con_el_que_se_trabaja)+ onlyKey);
 
                                     try {
 
@@ -754,12 +754,12 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
 
                                                                                     Maps_Solic_Pas.this.runOnUiThread(new Runnable() {
                                                                                         public void run() {
-                                                                                            System.out.println((getResources().getString(R.string.error_funcion_no_se_proceso_el_pago)));
+                                                                                            System.out.println(getResources().getString(R.string.error_funcion_no_se_proceso_el_pago));
                                                                                             AlertDialog.Builder builder = new AlertDialog.Builder(Maps_Solic_Pas.this);
                                                                                             builder.setCancelable(false);
-                                                                                            builder.setTitle((getResources().getString(R.string.Pago_no_realizado)));
+                                                                                            builder.setTitle(getResources().getString(R.string.Pago_no_realizado));
                                                                                             builder.setMessage(res_message);
-                                                                                            builder.setPositiveButton((getResources().getString(R.string.Aceptar)), new DialogInterface.OnClickListener() {
+                                                                                            builder.setPositiveButton(getResources().getString(R.string.Aceptar), new DialogInterface.OnClickListener() {
                                                                                                 @Override
                                                                                                 public void onClick(DialogInterface dialog, int which) {
                                                                                                     //progressBar.setVisibility( View.INVISIBLE );
@@ -768,7 +768,7 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
 
                                                                                                 }
                                                                                             });
-                                                                                            builder.setNegativeButton((getResources().getString(R.string.Cancelar)), new DialogInterface.OnClickListener() {
+                                                                                            builder.setNegativeButton(getResources().getString(R.string.Cancelar), new DialogInterface.OnClickListener() {
                                                                                                 @Override
                                                                                                 public void onClick(DialogInterface dialog, int which) {
 
@@ -889,12 +889,12 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
                                 }
 
                             } else {
-                                System.out.println((getResources().getString(R.string.Tiene_mas_perros)) + onlyKey);
+                                System.out.println(getResources().getString(R.string.Tiene_mas_perros) + onlyKey);
                             }
 
 
                         } else {
-                            System.out.println((getResources().getString(R.string.La_categoria_no_coincide)) + onlyKey);
+                            System.out.println(getResources().getString(R.string.La_categoria_no_coincide) + onlyKey);
 
 
                         }
@@ -971,7 +971,7 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
 
                 dialog_x.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
 
-                txt_info.setText((getResources().getString(R.string.Estamos_contactando_con_un_paseador)));
+                txt_info.setText(getResources().getString(R.string.Estamos_contactando_con_un_paseador));
                 txt_perros.setText(iopi.getStringExtra( "names_dogs" ));
 
                 Glide.with(getApplicationContext()).load(R.raw.gif_paseo).apply(RequestOptions.circleCropTransform()).into(carga_paseo);
@@ -1043,12 +1043,12 @@ public class Maps_Solic_Pas extends FragmentActivity implements OnMapReadyCallba
                                             mMap.addMarker ( markerOptions );
 
 
-                                            Location locationA = new Location ( (getResources().getString(R.string.Punto_A)));
+                                            Location locationA = new Location  (getResources().getString(R.string.Punto_A));
 
                                             locationA.setLatitude ( Ubicacion.latitude );
                                             locationA.setLongitude ( Ubicacion.longitude );
 
-                                            Location locationB = new Location ( (getResources().getString(R.string.Punto_B)));
+                                            Location locationB = new Location (getResources().getString(R.string.Punto_B));
 
                                             locationB.setLatitude ( location.latitude );
                                             locationB.setLongitude ( location.longitude );

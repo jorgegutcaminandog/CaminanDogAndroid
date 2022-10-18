@@ -207,7 +207,7 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
                 TextView txt_fechaVig = (TextView)vista.findViewById(R.id.fechavigrecup);
 
 
-                txt_titulo.setText((getResources().getString(R.string.Placa))+paseo_recuperandog.getQR());
+                txt_titulo.setText(getResources().getString(R.string.Placa)+paseo_recuperandog.getQR());
                 txt_fechaVig.setText(displayFormat2.format(date2));
                 txt_fecha.setText(displayFormat.format(date));
                 txt_direc.setText(paseo_recuperandog.getDireccion());
@@ -215,7 +215,7 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
                 txt_msjContacto.setText(paseo_recuperandog.getMensajeContacto());
 
                 if (paseo_recuperandog.getReportado().equals("true")){
-                    reportar.setText((getResources().getString(R.string.Reportado)));
+                    reportar.setText(getResources().getString(R.string.Reportado));
                 }
 
 
@@ -225,7 +225,7 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
                     public void onClick(View view) {
                         if (GetPermisionCall()){
                             Intent i = new Intent(Intent.ACTION_CALL);
-                            i.setData(Uri.parse((getResources().getString(R.string.Tel))+paseo_recuperandog.getTelefonoContacto()));
+                            i.setData(Uri.parse(getResources().getString(R.string.Tel)+paseo_recuperandog.getTelefonoContacto()));
                             startActivity(i);
                         }else{
 
@@ -260,7 +260,7 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
                             gMap.addMarker(new MarkerOptions()
                                     .position(ubic)
                                     .icon(bitmapDescriptorFromVector(getActivity(), R.drawable.ic_pinperro))
-                                    .title((getResources().getString(R.string.Ubicacion_de)+nombrePerr)));
+                                    .title(getResources().getString(R.string.Ubicacion_de)+nombrePerr));
                             //gMap.addMarker(new MarkerOptions().position(ubic).title("Ubicacion de "+bundle2.getString("nombre"))).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pinperro));
                             gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ubic, 17));
                             //gMap.UiSettings.setZoomControlsEnabled(true);
@@ -343,7 +343,7 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
                 PackageManager.PERMISSION_GRANTED) {
             // You can use the API that requires the permission.
             //performAction(...);
-            System.out.println("obtener ubicacion");
+            System.out.println(getResources().getString(R.string.Obtener_ubicacion));
             //mMap.setMyLocationEnabled(true);
 
             locationRequest = LocationRequest.create();
@@ -415,7 +415,7 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
             TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
             titlemsj.setText("");
-            subtitlemsj.setText("Recuerda que para tener una precisión del lugar donde requieres tu(s) paseo(s) o utilizar las funciones de tu placa de Recuperandog es necesario que compartas con CaminanDog tu ubicación");
+            subtitlemsj.setText (getResources().getString(R.string.Recuerda_que_para_tener_una_precision_del_lugar_donde_requieres_tus_paseos));
             simsj.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -466,7 +466,7 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
                     TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
                     titlemsj.setText("");
-                    subtitlemsj.setText("Recuerda que para tener una precisión del lugar donde requieres tu(s) paseo(s) o utilizar las funciones de tu placa de Recuperandog es necesario que compartas con CaminanDog tu ubicación");
+                    subtitlemsj.setText (getResources().getString(R.string.Recuerda_que_para_tener_una_precision_del_lugar_donde_requieres_tus_paseos));;
                     simsj.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -514,7 +514,7 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
             TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
             titlemsj.setText("");
-            subtitlemsj.setText("Recuerda que para tener comunicación con tu paseador deberas aceptar el permiso.");
+            subtitlemsj.setText (getResources().getString(R.string.Recuerda_que_para_tener_comunicacion));;
             simsj.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -560,11 +560,11 @@ public class Recuperandog_Informacion_Fragment extends Fragment {
             gMap.addMarker(new MarkerOptions()
                     .position(userLocation)
                     .icon(bitmapDescriptorFromVector(getActivity(), R.drawable.ic_pinusuario))
-                    .title("Tu ubicacion"));
+                    .title(getResources().getString(R.string.Tu_ubicacion)));
             gMap.addMarker(new MarkerOptions()
                     .position(ubic)
                     .icon(bitmapDescriptorFromVector(getActivity(), R.drawable.ic_pinperro))
-                    .title("Ubicacion de "+nombrePerr));
+                    .title(getResources().getString(R.string.Ubicacion_de)+nombrePerr));
 
 
             //gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation,20f));

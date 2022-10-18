@@ -67,19 +67,19 @@ public class SignupActivity extends AppCompatActivity {
 
                 if (TextUtils.isEmpty(email)) {
 
-                    inputEmail.setError((getResources().getString(R.string.Ingresa_un_email)));
+                    inputEmail.setError(getResources().getString(R.string.Ingresa_un_email));
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)) {
 
-                    inputPassword.setError((getResources().getString(R.string.Ingresa_una_contraseña)));
+                    inputPassword.setError(getResources().getString(R.string.Ingresa_una_contraseña));
                     return;
                 }
 
                 if (TextUtils.isEmpty(password2)) {
 
-                    inputPassword2.setError((getResources().getString(R.string.Repite_tu_contraseña)));
+                    inputPassword2.setError(getResources().getString(R.string.Repite_tu_contraseña));
                     return;
                 }
 
@@ -89,7 +89,7 @@ public class SignupActivity extends AppCompatActivity {
                 }
 
                 if (!password.equals(password2)){
-                    inputPassword2.setError((getResources().getString(R.string.Las_contraseñas_no_coinciden)));
+                    inputPassword2.setError(getResources().getString(R.string.Las_contraseñas_no_coinciden));
                     return;
                 }
 

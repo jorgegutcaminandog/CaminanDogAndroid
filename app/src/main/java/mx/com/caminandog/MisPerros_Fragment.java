@@ -174,10 +174,10 @@ public class MisPerros_Fragment extends Fragment {
 
                         AlertDialog.Builder myAlertDialog = new AlertDialog.Builder(
                                 getActivity());
-                        myAlertDialog.setTitle((getResources().getString(R.string.Sube_una_foto)));
-                        myAlertDialog.setMessage((getResources().getString(R.string.Como_quieres_realizar_esta_accion)));
+                        myAlertDialog.setTitle(getResources().getString(R.string.Sube_una_foto));
+                        myAlertDialog.setMessage(getResources().getString(R.string.Como_quieres_realizar_esta_accion));
 
-                        myAlertDialog.setPositiveButton((getResources().getString(R.string.Galeria)),
+                        myAlertDialog.setPositiveButton(getResources().getString(R.string.Galeria),
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface arg0, int arg1) {
 
@@ -189,7 +189,7 @@ public class MisPerros_Fragment extends Fragment {
                                     }
                                 });
 
-                        myAlertDialog.setNegativeButton((getResources().getString(R.string.Camara)),
+                        myAlertDialog.setNegativeButton(getResources().getString(R.string.Camara),
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface arg0, int arg1) {
                                         GetCameraPermission();
@@ -233,8 +233,8 @@ public class MisPerros_Fragment extends Fragment {
                         String name_insert = name.getText().toString();
 
                         if (!name_insert.equals("")){
-                            mprogress.setTitle((getResources().getString(R.string.Espera_un_momento)));
-                            mprogress.setMessage((getResources().getString(R.string.Subiendo_foto)));
+                            mprogress.setTitle(getResources().getString(R.string.Espera_un_momento));
+                            mprogress.setMessage(getResources().getString(R.string.Subiendo_foto));
                             mprogress.setCancelable(false);
                             mprogress.show();
                             personsRef1 = FirebaseDatabase.getInstance().getReference().child("Perros");
@@ -278,7 +278,7 @@ public class MisPerros_Fragment extends Fragment {
                                             uploadTask.addOnFailureListener(new OnFailureListener() {
                                                 @Override
                                                 public void onFailure(@NonNull Exception exception) {
-                                                    System.out.println((getResources().getString(R.string.No_se_pudo_subir_el_archivo)));
+                                                    System.out.println(getResources().getString(R.string.No_se_pudo_subir_el_archivo));
                                                 }
                                             }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                                 @Override
@@ -333,7 +333,7 @@ public class MisPerros_Fragment extends Fragment {
 
 
                         }else{
-                            name.setError((getResources().getString(R.string.Este_campo_no_puede_estar_vacio)));
+                            name.setError(getResources().getString(R.string.Este_campo_no_puede_estar_vacio));
                         }
 
 
@@ -474,8 +474,8 @@ public class MisPerros_Fragment extends Fragment {
                         Button cancelar = (Button) mView.findViewById(R.id.btn_cancel_add);
                         name.setText(model.getNombre());
 
-                        edit.setText((getResources().getString(R.string.Editar)));
-                        editbtn.setText((getResources().getString(R.string.Editar)));
+                        edit.setText(getResources().getString(R.string.Editar));
+                        editbtn.setText(getResources().getString(R.string.Editar));
 
                         //upload image
                         //mUpload = (ImageButton) mView.findViewById(R.id.up_foto);
@@ -490,10 +490,10 @@ public class MisPerros_Fragment extends Fragment {
 
                                 AlertDialog.Builder myAlertDialog = new AlertDialog.Builder(
                                         getActivity());
-                                myAlertDialog.setTitle((getResources().getString(R.string.Sube_una_foto)));
-                                myAlertDialog.setMessage((getResources().getString(R.string.Como_quieres_realizar_esta_accion)));
+                                myAlertDialog.setTitle(getResources().getString(R.string.Sube_una_foto));
+                                myAlertDialog.setMessage(getResources().getString(R.string.Como_quieres_realizar_esta_accion));
 
-                                myAlertDialog.setPositiveButton((getResources().getString(R.string.Galeria)),
+                                myAlertDialog.setPositiveButton(getResources().getString(R.string.Galeria),
                                         new DialogInterface.OnClickListener() {
                                             public void onClick(DialogInterface arg0, int arg1) {
 
@@ -505,7 +505,7 @@ public class MisPerros_Fragment extends Fragment {
                                             }
                                         });
 
-                                myAlertDialog.setNegativeButton((getResources().getString(R.string.Camara)),
+                                myAlertDialog.setNegativeButton(getResources().getString(R.string.Camara),
                                         new DialogInterface.OnClickListener() {
                                             public void onClick(DialogInterface arg0, int arg1) {
 
@@ -543,7 +543,7 @@ public class MisPerros_Fragment extends Fragment {
                                 final ProgressBar prog = ((ProgressBar) mView.findViewById(R.id.progres_elim));
                                 prog.setVisibility( View.INVISIBLE );
                                 title.setVisibility( View.INVISIBLE );
-                                resultt.setText((getResources().getString(R.string.Estas_seguro_de_eliminar_este_perrhijo)));
+                                resultt.setText(getResources().getString(R.string.Estas_seguro_de_eliminar_este_perrhijo));
                                 final AlertDialog dialogg = mBuilder.create();
                                 dialogg.getWindow().setBackgroundDrawable(new ColorDrawable( Color.TRANSPARENT));
                                 dialogg.show();
@@ -646,8 +646,8 @@ public class MisPerros_Fragment extends Fragment {
                                 String name_insert = name.getText().toString();
 
                                 if (!name_insert.equals("")){
-                                    mprogress.setTitle((getResources().getString(R.string.Espera_un_momento)));
-                                    mprogress.setMessage((getResources().getString(R.string.Subiendo_foto)));
+                                    mprogress.setTitle(getResources().getString(R.string.Espera_un_momento));
+                                    mprogress.setMessage(getResources().getString(R.string.Subiendo_foto));
                                     mprogress.setCancelable(false);
                                     mprogress.show();
                                     personsRef1 = FirebaseDatabase.getInstance().getReference().child("Perros");
@@ -687,7 +687,7 @@ public class MisPerros_Fragment extends Fragment {
                                                         uploadTask.addOnFailureListener(new OnFailureListener() {
                                                             @Override
                                                             public void onFailure(@NonNull Exception exception) {
-                                                                System.out.println((getResources().getString(R.string.No_se_pudo_subir_el_archivo)));
+                                                                System.out.println(getResources().getString(R.string.No_se_pudo_subir_el_archivo));
                                                             }
                                                         }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                                             @Override
@@ -746,7 +746,7 @@ public class MisPerros_Fragment extends Fragment {
                                     dialog.hide();
 
                                 }else{
-                                    name.setError((getResources().getString(R.string.Este_campo_no_puede_estar_vacio)));
+                                    name.setError(getResources().getString(R.string.Este_campo_no_puede_estar_vacio));
                                 }
 
 
@@ -967,7 +967,7 @@ public class MisPerros_Fragment extends Fragment {
             TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
             titlemsj.setText("");
-            subtitlemsj.setText((getResources().getString(R.string.Recuerda_que_para_subir_una_foto_de_tu_perrito)));
+            subtitlemsj.setText(getResources().getString(R.string.Recuerda_que_para_subir_una_foto_de_tu_perrito));
             simsj.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

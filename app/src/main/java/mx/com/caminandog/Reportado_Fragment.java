@@ -87,15 +87,15 @@ public class Reportado_Fragment extends Fragment {
 
 
                 if (paseo_recuperandog.getReportado().equals("true")){
-                    txtmsj.setText((getResources().getString(R.string.El_extravio_de_tu_mascota)));
-                    btnRep.setText((getResources().getString(R.string.Finalizar_reporte_de_extravio)));
+                    txtmsj.setText(getResources().getString(R.string.El_extravio_de_tu_mascota));
+                    btnRep.setText(getResources().getString(R.string.Finalizar_reporte_de_extravio));
                     btnRep.setBackground(getResources().getDrawable(R.drawable.rounded_button_azul_recup));
                     btnRep.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             recuperandog_lectura_ref.child("reportado").setValue("false");
-                            txtmsj.setText((getResources().getString(R.string.Si_tu_mascota_vinculada)));
-                            btnRep.setText((getResources().getString(R.string.Reportar_mascota_extraviada)));
+                            txtmsj.setText(getResources().getString(R.string.Si_tu_mascota_vinculada));
+                            btnRep.setText(getResources().getString(R.string.Reportar_mascota_extraviada));
                             btnRep.setBackground(getResources().getDrawable(R.drawable.rounded_button_grey_reporte));
 
                         }
@@ -106,8 +106,8 @@ public class Reportado_Fragment extends Fragment {
                         public void onClick(View view) {
                             recuperandog_lectura_ref.child("reportado").setValue("true");
                             btnRep.setBackground(getResources().getDrawable(R.drawable.rounded_button_azul_recup));
-                            txtmsj.setText((getResources().getString(R.string.El_extravio_de_tu_mascota)));
-                            btnRep.setText((getResources().getString(R.string.Finalizar_reporte_de_extravio)));
+                            txtmsj.setText(getResources().getString(R.string.El_extravio_de_tu_mascota));
+                            btnRep.setText(getResources().getString(R.string.Finalizar_reporte_de_extravio));
 
                         }
                     });

@@ -353,7 +353,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
                         myAlertDialog.setTitle(getResources().getString(R.string.Sube_una_foto));
                         myAlertDialog.setMessage(getResources().getString(R.string.Como_quieres_realizar_esta_accion));
 
-                        myAlertDialog.setPositiveButton((getResources().getString(R.string.Galeria)),
+                        myAlertDialog.setPositiveButton(getResources().getString(R.string.Galeria),
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface arg0, int arg1) {
 
@@ -365,7 +365,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
                                     }
                                 });
 
-                        myAlertDialog.setNegativeButton((getResources().getString(R.string.Camara)),
+                        myAlertDialog.setNegativeButton(getResources().getString(R.string.Camara),
                                 new DialogInterface.OnClickListener() {
 
 
@@ -967,7 +967,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
                                         System.out.println(getResources().getString(R.string.No_tiene_vacunas));
                                         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(Configuracion_Paseo.this);
                                         builder.setTitle("Oh no!");
-                                        builder.setMessage((getResources().getString(R.string.El_perfil_de))+model.getNombre()+ getResources().getString(R.string.Aun_no_cuenta_con_información_de_vacunas_en_su_perfil));
+                                        builder.setMessage(getResources().getString(R.string.El_perfil_de)+model.getNombre()+ getResources().getString(R.string.Aun_no_cuenta_con_información_de_vacunas_en_su_perfil));
                                         builder.setPositiveButton("OK" , new DialogInterface.OnClickListener() {
                                             @Override
                                             public void onClick(DialogInterface dialogInterface, int i) {
@@ -1221,7 +1221,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
                                                         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder ( Configuracion_Paseo.this );
                                                         builder.setTitle(getResources().getString(R.string.Pago_no_realizado));
                                                         builder.setMessage ( res_message );
-                                                        builder.setPositiveButton ( (getResources().getString(R.string.Aceptar)) ,new DialogInterface.OnClickListener () {
+                                                        builder.setPositiveButton (getResources().getString(R.string.Aceptar) ,new DialogInterface.OnClickListener () {
                                                             @Override
                                                             public void onClick(DialogInterface dialog ,int which) {
                                                                 progressBar.setVisibility( View.INVISIBLE );
@@ -1231,7 +1231,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
 
                                                             }
                                                         } );
-                                                        builder.setNegativeButton( (getResources().getString(R.string.CANCELAR)), new DialogInterface.OnClickListener() {
+                                                        builder.setNegativeButton(getResources().getString(R.string.CANCELAR), new DialogInterface.OnClickListener() {
                                                             @Override
                                                             public void onClick(DialogInterface dialog, int which) {
 
@@ -1318,10 +1318,10 @@ public class Configuracion_Paseo extends AppCompatActivity {
                                                             handler.postDelayed(new Runnable() {
                                                                 public void run() {
                                                                     new AlertDialog.Builder(Configuracion_Paseo.this)
-                                                                            .setTitle((getResources().getString(R.string.Compra_exitosa)))
-                                                                            .setMessage((getResources().getString(R.string.En_un_periodo_máximo_de_2_horas)))
+                                                                            .setTitle(getResources().getString(R.string.Compra_exitosa))
+                                                                            .setMessage(getResources().getString(R.string.En_un_periodo_máximo_de_2_horas))
                                                                             .setCancelable(false)
-                                                                            .setPositiveButton((getResources().getString(R.string.Aceptar)), new DialogInterface.OnClickListener() {
+                                                                            .setPositiveButton(getResources().getString(R.string.Aceptar), new DialogInterface.OnClickListener() {
                                                                                 public void onClick(DialogInterface dialog, int id) {
                                                                                     Configuracion_Paseo.this.finish();
                                                                                 }
@@ -2440,7 +2440,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
         dialog_add_cod.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         cup_txt.setClickable(true);
-        cup_txt.setText((getResources().getString(R.string.Agregar_cupon)));
+        cup_txt.setText(getResources().getString(R.string.Agregar_cupon));
 
 
         final DatabaseReference user_cup_ref = database.getReference(FirebaseReferences.USER_REFERERENCE).child(user.getUid()).child("cupones");
@@ -2452,7 +2452,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
                     cup_txt.setTextColor(ContextCompat.getColor(Configuracion_Paseo.this, R.color.color_texto_cup_azul));
                     cup_num_txt.setTextColor(ContextCompat.getColor(Configuracion_Paseo.this, R.color.color_texto_cup_azul));
                 }else {
-                    cup_txt.setText((getResources().getString(R.string.Codigo_no_aplicable)));
+                    cup_txt.setText(getResources().getString(R.string.Codigo_no_aplicable));
                 }
 
             }
@@ -2501,7 +2501,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
                                                                             if (dataSnapshot.exists()){
                                                                                 S_dialog(getResources().getString(R.string.Codigo_invalido), getResources().getString(R.string.El_codigo_de_promoción_ya_se_ha_aplicado_anteriormente));
                                                                             }else {
-                                                                                System.out.println((getResources().getString(R.string.Se_agregaria_el_registro)));
+                                                                                System.out.println(getResources().getString(R.string.Se_agregaria_el_registro));
                                                                                 Map<String, Object> update = new HashMap<>();
                                                                                 update.put("activo",true);
                                                                                 if (cupon.getUnidad_descuento().toString().equals("$")) {
@@ -2607,7 +2607,7 @@ public class Configuracion_Paseo extends AppCompatActivity {
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder ( Configuracion_Paseo.this );
         builder.setTitle ( title );
         builder.setMessage ( message );
-        builder.setPositiveButton ( (getResources().getString(R.string.Aceptar)) ,new DialogInterface.OnClickListener () {
+        builder.setPositiveButton (getResources().getString(R.string.Aceptar) ,new DialogInterface.OnClickListener () {
             @Override
             public void onClick(DialogInterface dialog ,int which) {
 

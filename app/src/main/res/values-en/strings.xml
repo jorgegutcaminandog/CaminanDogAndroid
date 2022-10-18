@@ -540,7 +540,7 @@
     <string name="Mi_Cuenta">My Account</string>
     <string name="Estas_seguro_de_querer_salir">Are you sure you want to go out?</string>
     <string name="Si">Yes</string>
-    <string name="Principal">Main</string>
+    <string name="Principal">Principal</string>
     <string name="Perrhijos">DogChilds</string>
     <string name="Tarjetas">Cards</string>
     <string name="Codigos">Codes</string>
@@ -732,7 +732,29 @@
     <string name=  "Tiempo_recorrido">Time travel</string>
     <string name=  "De">Of</string>
 
+    //Inicio_Fragment//
+    <string name=  "No_es_correcto">is not correct</string>
+    <string name=  "Por_favor_elimina_todos_los">Please remove all ; from this section</string>
+    <string name=  "Por_favor_ingresa_SN">Please enter the exterior and/or interior number of the address, if it does not exist, enter SN</string>
+    <string name=  "Por_favor_ingresa_la_calle">Please enter street or place name</string>
+    <string name=  "No_se_pudo_formatear">It was not possible format the date</string>
+    <string name=  "Si_necesitas_modificar_alguna_fecha">If you need to modify any date already scheduled, help us to reschedule at least one hour before the walk. Once the walker arrives at your address, there will be no refund. Not sure of this last sentence</string>
+    <string name=  "selecciona_solamente">Select only</string>
+    <string name=  "dias">days</string>
+    <string name=  "selecciona_almenos">select unless</string>
+    <string name=  "mas_de">more than</string>
+    <string name=  "no_permitido">not allowed</string>
+    <string name=  "Selecciona_una_hora_para">Select an hour for: </string>
+    <string name=  "Desafortunadamente_no_podemos_encontrar_un_DogLover">Unfortunately we cannot find a DogLover for you at the selected time, try to book after 12:00pm</string>
+    <string name=  "fecha_en_rango">Date in range</string>
+    <string name=  "este_campo_es_obligatorio">This field is required</string>
+    <string name=  "Ingresa_un_numero_de_10_digitos">Enter a 10 digit number</string>
+    <string name=  "Paseo_del">Walk of the</string>
+    <string name=  "a_las">at</string>
+    <string name=  "Recuerda_que_para_tener_comunicacion">Remember that to have communication with your walker you must accept the permission</string>
 
+    //Recuperandog_Informacion_Fragment//
+    <string name=  "Tu_ubicacion">Your location</string>
 
 
 </resources>

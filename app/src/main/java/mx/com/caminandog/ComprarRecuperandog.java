@@ -271,7 +271,7 @@ public class ComprarRecuperandog extends Fragment implements OnMapReadyCallback 
                 Usuario usuario = dataSnapshot.getValue(Usuario.class);
 
                 if (dataSnapshot.exists()){
-                    nombre.setText((getResources().getString(R.string.Hola)) + usuario.getNombre());
+                    nombre.setText(getResources().getString(R.string.Hola) + usuario.getNombre());
                 }
 
             }
@@ -403,7 +403,7 @@ public class ComprarRecuperandog extends Fragment implements OnMapReadyCallback 
                                                 android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder ( getActivity() );
                                                 builder.setTitle (getResources().getString(R.string.Pago_no_realizado));
                                                 builder.setMessage ( res_message );
-                                                builder.setPositiveButton ( (getResources().getString(R.string.Aceptar)),new DialogInterface.OnClickListener () {
+                                                builder.setPositiveButton (getResources().getString(R.string.Aceptar),new DialogInterface.OnClickListener () {
                                                     @Override
                                                     public void onClick(DialogInterface dialog ,int which) {
                                                         //progressBar.setVisibility( View.INVISIBLE );
@@ -444,10 +444,10 @@ public class ComprarRecuperandog extends Fragment implements OnMapReadyCallback 
                                                     handler.postDelayed(new Runnable() {
                                                         public void run() {
                                                             new AlertDialog.Builder(getActivity())
-                                                                    .setTitle((getResources().getString(R.string.Compra_exitosa)))
-                                                                    .setMessage((getResources().getString(R.string.En_un_periodo_maximo_de_2_horas_te_contactaremos_para_informarte_sobre_el_envio_de_tus_plaquitas)))
+                                                                    .setTitle(getResources().getString(R.string.Compra_exitosa))
+                                                                    .setMessage(getResources().getString(R.string.En_un_periodo_maximo_de_2_horas_te_contactaremos_para_informarte_sobre_el_envio_de_tus_plaquitas))
                                                                     .setCancelable(false)
-                                                                    .setPositiveButton((getResources().getString(R.string.Aceptar)), new DialogInterface.OnClickListener() {
+                                                                    .setPositiveButton(getResources().getString(R.string.Aceptar), new DialogInterface.OnClickListener() {
                                                                         public void onClick(DialogInterface dialog, int id) {
                                                                             dialog_x.dismiss();
                                                                             FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();

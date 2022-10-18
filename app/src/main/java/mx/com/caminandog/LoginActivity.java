@@ -73,13 +73,13 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (TextUtils.isEmpty(email)) {
 
-                    inputEmail.setError((getResources().getString(R.string.Ingresa_un_email)));
+                    inputEmail.setError(getResources().getString(R.string.Ingresa_un_email));
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)) {
 
-                    inputPassword.setError((getResources().getString(R.string.Ingresa_una_contraseña)));
+                    inputPassword.setError(getResources().getString(R.string.Ingresa_una_contraseña));
                     return;
                 }
 

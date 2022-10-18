@@ -203,7 +203,7 @@ public class Account extends AppCompatActivity  {
                                     Toast.makeText(getApplicationContext(),(getResources().getString(R.string.Nombre_Requerido)) , Toast.LENGTH_LONG).show();
 
                                 }else if (appat.getText().toString().equals( "" )){
-                                    appat.setError((getResources().getString(R.string.Por_favor_llena_este_campo)));
+                                    appat.setError(getResources().getString(R.string.Por_favor_llena_este_campo));
                                     Toast.makeText(getApplicationContext(),(getResources().getString(R.string.Apellido_Paterno_Requerido)), Toast.LENGTH_LONG).show();
 
                                // }else if (appat.getText().toString().equals( "" )){

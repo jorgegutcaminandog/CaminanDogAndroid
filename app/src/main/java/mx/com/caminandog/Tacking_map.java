@@ -160,7 +160,7 @@ public class Tacking_map extends Fragment {
         TextView nombpas = v.findViewById( R.id.nom_txt );
         TextView txt_categoria = v.findViewById( R.id.txt_value_cat);
 
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle((getResources().getString(R.string.Paseos_activos)));
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(getResources().getString(R.string.Paseos_activos));
 
 
         Bundle bundle = this.getArguments();
@@ -436,7 +436,7 @@ public class Tacking_map extends Fragment {
                                 longi = ubicacionUsuario.getLongitud();
                                 Bitmap bitmap = getBitmap(getContext(), R.drawable.ic_pin_casa);
                                 gMap.addMarker(new MarkerOptions()
-                                        .position(new LatLng(latit, longi)).icon(BitmapDescriptorFactory.fromBitmap(bitmap)).title( (getResources().getString(R.string.Punto_de_recogida)) ));
+                                        .position(new LatLng(latit, longi)).icon(BitmapDescriptorFactory.fromBitmap(bitmap)).title( getResources().getString(R.string.Punto_de_recogida)));
                                 gMap.moveCamera( CameraUpdateFactory.newLatLngZoom(new LatLng( latit,longi ), 16.0f));
 
                                 double tiempo_paseo = paseo.getTiempo_paseo();
@@ -539,7 +539,7 @@ public class Tacking_map extends Fragment {
                                         longi = ubicacionUsuario.getLongitud();
                                         Bitmap bitmap = getBitmap(getContext(), R.drawable.ic_pin_casa);
                                         gMap.addMarker(new MarkerOptions()
-                                                .position(new LatLng(latit, longi)).icon(BitmapDescriptorFactory.fromBitmap(bitmap)).title( (getResources().getString(R.string.Punto_de_recogida)) ));
+                                                .position(new LatLng(latit, longi)).icon(BitmapDescriptorFactory.fromBitmap(bitmap)).title(getResources().getString(R.string.Punto_de_recogida)));
 
 
 
@@ -570,12 +570,12 @@ public class Tacking_map extends Fragment {
                                             if (tiem == 1){
                                                 if (dif_sec>=60){
                                                     crono.setTextColor( Color.RED );
-                                                    System.out.println((getResources().getString(R.string.Tiempo_de_entregar_paseo_1_hr)));
+                                                    System.out.println(getResources().getString(R.string.Tiempo_de_entregar_paseo_1_hr));
                                                 }
                                             }else if (tiem == 2){
                                                 if (dif_sec>=120){
                                                     crono.setTextColor( Color.RED );
-                                                    System.out.println((getResources().getString(R.string.Tiempo_de_entregar_paseo_2_hr)));
+                                                    System.out.println(getResources().getString(R.string.Tiempo_de_entregar_paseo_2_hr));
                                                 }
                                             }
 
@@ -984,15 +984,15 @@ public class Tacking_map extends Fragment {
             if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity (),
                     Manifest.permission.ACCESS_FINE_LOCATION)){
                 new AlertDialog.Builder(getContext ())
-                        .setTitle((getResources().getString(R.string.Permiso_de_ubicacion)))
-                        .setMessage((getResources().getString(R.string.Desea_activar_su_ubicacion)))
-                        .setPositiveButton((getResources().getString(R.string.Aceptar)), new DialogInterface.OnClickListener() {
+                        .setTitle(getResources().getString(R.string.Permiso_de_ubicacion))
+                        .setMessage(getResources().getString(R.string.Desea_activar_su_ubicacion))
+                        .setPositiveButton(getResources().getString(R.string.Aceptar), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSIONS_REQUEST_LOCATION);
                             }
                         })
-                        .setNegativeButton((getResources().getString(R.string.Cancelar)), new DialogInterface.OnClickListener() {
+                        .setNegativeButton(getResources().getString(R.string.Cancelar), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 getActivity().finish();
@@ -1122,7 +1122,7 @@ public class Tacking_map extends Fragment {
             TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
             titlemsj.setText("");
-            subtitlemsj.setText((getResources().getString(R.string.Recuerda_que_para_tener_comunicacion_por_telefono)));
+            subtitlemsj.setText(getResources().getString(R.string.Recuerda_que_para_tener_comunicacion_por_telefono));
             simsj.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -1180,7 +1180,7 @@ public class Tacking_map extends Fragment {
                     TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
                     titlemsj.setText("");
-                    subtitlemsj.setText((getResources().getString(R.string.Recuerda_que_para_tener_comunicacion_por_telefono)));
+                    subtitlemsj.setText(getResources().getString(R.string.Recuerda_que_para_tener_comunicacion_por_telefono));
                     simsj.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {

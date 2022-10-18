@@ -270,7 +270,7 @@ public class Codigos_Fragment extends Fragment {
 
                                 }
                             });
-                            builder.setNegativeButton((getResources().getString(R.string.CANCELAR)), new DialogInterface.OnClickListener() {
+                            builder.setNegativeButton (getResources().getString(R.string.CANCELAR), new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
 
@@ -367,7 +367,7 @@ public class Codigos_Fragment extends Fragment {
         AlertDialog.Builder builder = new AlertDialog.Builder ( getContext() );
         builder.setTitle ( title );
         builder.setMessage ( message );
-        builder.setPositiveButton ( (getResources().getString(R.string.Aceptar)) ,new DialogInterface.OnClickListener () {
+        builder.setPositiveButton (getResources().getString(R.string.Aceptar) ,new DialogInterface.OnClickListener () {
             @Override
             public void onClick(DialogInterface dialog ,int which) {
 

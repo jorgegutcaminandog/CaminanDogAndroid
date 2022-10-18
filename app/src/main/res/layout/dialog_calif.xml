@@ -55,9 +55,9 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:background="@color/azul_caminandog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/azul_caminandog"
                 android:gravity="center"
                 android:text="@string/Cuanto_disfrutó_de_su_paseo"
                 android:textColor="@color/white"

@@ -476,7 +476,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
 
                     nombre.setText(getResources().getString(R.string.Hola) + usuario.getNombre());
-//hola
+
                     direccion_casa = usuario.getDireccion();
                     latitud_casa = usuario.getLatitud();
                     longitud_casa = usuario.getLongitud();
@@ -741,7 +741,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                                                                                     @Override
                                                                                     public void run() {
                                                                                         Toast.makeText(getActivity(),
-                                                                                                "No hubo respuesta",
+                                                                                                (getResources().getString(R.string.No_hubo_respuesta)),
                                                                                                 Toast.LENGTH_SHORT).show();
 
                                                                                     }
@@ -761,7 +761,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
                                                                                         this.runOnUiThread(new Runnable() {
                                                                                             public void run() {
-                                                                                                Toast.makeText(getContext(), "Eliminado exitosamente!", Toast.LENGTH_LONG).show();
+                                                                                                Toast.makeText(getContext(), (getResources().getString(R.string.Eliminado_exitosamente)), Toast.LENGTH_LONG).show();
 
 
                                                                                             }
@@ -772,7 +772,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
                                                                                         this.runOnUiThread(new Runnable() {
                                                                                             public void run() {
-                                                                                                Toast.makeText(getContext(), "no es correcto", Toast.LENGTH_LONG).show();
+                                                                                                Toast.makeText(getContext(), (getResources().getString(R.string.No_es_correcto)), Toast.LENGTH_LONG).show();
 
                                                                                             }
                                                                                         });
@@ -961,7 +961,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
 
                 if (text_int.getText().toString().contains(";")){
-                    text_int.setError("Por favor elimina todos los ; de esta casilla");
+                    text_int.setError (getResources().getString(R.string.Por_favor_elimina_todos_los));
                     prog_start.setVisibility(View.INVISIBLE);
                     agendad.setClickable(true);
 
@@ -981,7 +981,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
 
 
-                    text_int.setError("Por favor ingresa el numero exterior y/o interior del domicilio, de no existir coloca SN");
+                    text_int.setError(getResources().getString(R.string.Por_favor_ingresa_SN));
                     prog_start.setVisibility(View.INVISIBLE);
                     agendad.setClickable(true);
 
@@ -1001,7 +1001,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
 
                 } else if (txt_places.getText().toString().equals("")||txt_places.getText().toString().equals(" ")){
-                    txt_places.setError("Por favor ingresa la calle o el nombre del lugar");
+                    txt_places.setError (getResources().getString(R.string.Por_favor_ingresa_la_calle));
                     prog_start.setVisibility(View.INVISIBLE);
                     agendad.setClickable(true);
 
@@ -1064,7 +1064,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                                 //Toast.makeText(getContext(), ""+datenew+" j "+date, Toast.LENGTH_SHORT).show();
                             } catch (Exception e) {
                                 System.out.println(""+e );
-                                Toast.makeText(getContext(), "no se pudo format la fecha", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), (getResources().getString(R.string.No_se_pudo_formatear)), Toast.LENGTH_SHORT).show();
                             }
 
 
@@ -1144,7 +1144,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                                         TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
                                         titlemsj.setText("");
-                                        subtitlemsj.setText("Si necesitas modificar alguna fecha ya agendada, ayúdanos a reagendar mínimo con una hora de antelación al paseo. Una vez que el pasedor llegue a tu domicilio se dará por hecho");
+                                        subtitlemsj.setText (getResources().getString(R.string.Si_necesitas_modificar_alguna_fecha));
                                         simsj.setOnClickListener(new View.OnClickListener() {
                                             @Override
                                             public void onClick(View view) {
@@ -1215,11 +1215,11 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
                                         dialogfmsj.show();
                                     }else if (days_selected2.size()>num_dias){
-                                        Toast.makeText(getContext(), "selecciona solamente "+num_dias+" dias.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(),(getResources().getString(R.string.selecciona_solamente)+num_dias+ getResources().getString(R.string.dias)), Toast.LENGTH_SHORT).show();
                                         progress_agenda.setVisibility(View.INVISIBLE);
 
                                     }else{
-                                        Toast.makeText(getContext(), "selecciona almenos "+num_dias+" dias.", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(), (getResources().getString(R.string.selecciona_almenos)+num_dias+ getResources().getString(R.string.dias)), Toast.LENGTH_SHORT).show();
                                         progress_agenda.setVisibility(View.INVISIBLE);
                                     }
 
@@ -1348,12 +1348,12 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                                     //if (calendar.getSelectedDates().size()>=num_dias){
                                     if (days_selected2.size()>=num_dias){
                                         //analize dialog
-                                        Toast.makeText(getContext(), "mas de "+num_dias+" no permitido ", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(), (getResources().getString(R.string.mas_de))+num_dias+(getResources().getString(R.string.no_permitido)), Toast.LENGTH_SHORT).show();
                                     }else {
                                         // Toast.makeText(Agenda.this, "permitido", Toast.LENGTH_SHORT).show();
 
                                         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                                        builder.setTitle("Selecciona una hora para: "+calselected.get( Calendar.YEAR )+"/"+(calselected.get( Calendar.MONTH )
+                                        builder.setTitle((getResources().getString(R.string.Selecciona_una_hora_para))+calselected.get( Calendar.YEAR )+"/"+(calselected.get( Calendar.MONTH )
                                                 +1)+"/"+calselected.get( Calendar.DAY_OF_MONTH ));
 
                                         View holder=View.inflate(getActivity().getBaseContext(), R.layout.spinners, null);
@@ -1386,7 +1386,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                                                 } catch (Exception e) {
                                                     System.out.println(""+e );
 
-                                                    Toast.makeText(getContext(), "no se pudo format la fecha", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(getContext(), (getResources().getString(R.string.No_se_pudo_formatear)), Toast.LENGTH_SHORT).show();
 
                                                 }
 
@@ -1394,7 +1394,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                                                     System.out.println("fecha seleccionada antes de las 12pm del dia siguente <<>> "+date.toString()+" <<>> "+dateNextDay12hrs.toString());
                                                     AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                                                     builder.setTitle("Ohh no!");
-                                                    builder.setMessage("Desafortunadamente no podemos encontrar un DogLover para ti a la hora seleccionada, intenta agendar despues de las 12:00pm");
+                                                    builder.setMessage(getResources().getString(R.string.Desafortunadamente_no_podemos_encontrar_un_DogLover));
                                                     builder.setPositiveButton("OK" , new DialogInterface.OnClickListener() {
                                                         @Override
                                                         public void onClick(DialogInterface dialogInterface, int i) {
@@ -1404,7 +1404,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                                                     });
                                                     builder.show();
                                                 }else  {
-                                                    System.out.println("fecha en rango "+date.toString()+" <<>> "+dateNextDay12hrs.toString());
+                                                    System.out.println((getResources().getString(R.string.fecha_en_rango))+date.toString()+" <<>> "+dateNextDay12hrs.toString());
 
 
                                                     days_selected.add( date );
@@ -1741,19 +1741,19 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                 String telefono = txtTel.getText().toString().trim();
 
                 if (nombre.equals("")){
-                    txtName.setError("Este campo es obligatorio");
+                    txtName.setError (getResources().getString(R.string.este_campo_es_obligatorio));
                     return;
                 }else if(apellido.equals("")){
-                    txtAp.setError("Este campo es obligatorio");
+                    txtAp.setError(getResources().getString(R.string.este_campo_es_obligatorio));
                     return;
                 }else if (email.equals("")){
-                    txtEmail.setError("Este campo es obligatorio");
+                    txtEmail.setError (getResources().getString(R.string.este_campo_es_obligatorio));
                     return;
                 }else if (telefono.equals("")){
-                    txtTel.setError("Este campo es obligatorio");
+                    txtTel.setError (getResources().getString(R.string.este_campo_es_obligatorio));
                     return;
                 }else if (telefono.length() < 10){
-                    txtTel.setError("Ingresa un numero de 10 digitos");
+                    txtTel.setError (getResources().getString(R.string.Ingresa_un_numero_de_10_digitos));
                     return;
                 }else {
                     final Map<String, Object> registro = new HashMap<>();
@@ -1904,7 +1904,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                 cal2.setTimeInMillis( model.getTimestamp());
                 String date3 = android.text.format.DateFormat.format("EEEE dd/MM/yy", cal2).toString();
                 String date2 = android.text.format.DateFormat.format("hh:mm a", cal2).toString();
-                holder.setFechaTitulo("Paseo del "+date3+" a las "+date2);
+                holder.setFechaTitulo((getResources().getString(R.string.Paseo_del))+date3+ (getResources().getString(R.string.a_las))+date2);
                 holder.setImageMsg(model.isMensaje());
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -2137,7 +2137,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                         String text;
                         text = editText.getText().toString().trim();
                         if (text.isEmpty()){
-                            System.out.println("etsa vacio");
+                            System.out.println(getResources().getString(R.string.Esta_vacio));
                             editText.setText("");
                         }else {
                             txt_enviando.setVisibility(View.VISIBLE);
@@ -2420,7 +2420,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                 String text;
                 text = editText.getText().toString().trim();
                 if (text.isEmpty()){
-                    System.out.println("etsa vacio");
+                    System.out.println (getResources().getString(R.string.Esta_vacio));
                     editText.setText("");
                 }else {
                     txt_enviando.setVisibility(View.VISIBLE);
@@ -2528,14 +2528,14 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
         TextView title = (TextView) viewww.findViewById(R.id.title_dialod);
         TextView subtitle = (TextView) viewww.findViewById(R.id.subtitle_dialod);
 
-        title.setText( "Gps Desactivado" );
-        subtitle.setText( "Por favor activa el Gps de tu dispositivo" );
+        title.setText (getResources().getString(R.string.GPS_Desactivado));
+        subtitle.setText (getResources().getString(R.string.Por_favor_activa_el_GPS_de_tu_dispositivo));
 
         Button si = (Button)viewww.findViewById(R.id.btn_yes);
         Button no = (Button)viewww.findViewById(R.id.btn_nel);
 
         no.setVisibility( View.GONE );
-        si.setText( "activar" );
+        si.setText (getResources().getString(R.string.Activar));
 
         si.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -2814,7 +2814,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                 final DatabaseReference check_email = FirebaseDatabase.getInstance().getReference().child("Usuarios").child(user.getUid());
 
                 if (text_int.getText().toString().contains(";")){
-                    text_int.setError("Por favor elimina todos los ; de esta casilla");
+                    text_int.setError (getResources().getString(R.string.Por_favor_elimina_todos_los));
                     prog_start.setVisibility(View.INVISIBLE);
                     btnExtraerDireccion.setClickable(true);
 
@@ -2834,7 +2834,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
 
 
-                    text_int.setError("Por favor ingresa el numero exterior y/o interior del domicilio, de no existir coloca SN");
+                    text_int.setError (getResources().getString(R.string.Por_favor_ingresa_SN));
                     prog_start.setVisibility(View.INVISIBLE);
                     btnExtraerDireccion.setClickable(true);
 
@@ -2854,7 +2854,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
 
 
                 }else if (txt_places.getText().toString().equals("")||txt_places.getText().toString().equals(" ")){
-                    txt_places.setError("Por favor ingresa la calle o el nombre del lugar");
+                    txt_places.setError (getResources().getString(R.string.Por_favor_ingresa_la_calle));
                     prog_start.setVisibility(View.INVISIBLE);
                     btnExtraerDireccion.setClickable(true);
 
@@ -2924,7 +2924,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                 save.setClickable(false);
 
                 if (interior_txt.getText().toString().contains(";")){
-                    interior_txt.setError("Por favor elimina todos los ; de esta casilla");
+                    interior_txt.setError (getResources().getString(R.string.Por_favor_elimina_todos_los));
                     //prog_start.setVisibility(View.INVISIBLE);
                     save.setClickable(true);
 
@@ -2942,7 +2942,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                 }else if (interior_txt.getText().toString().equals("")
                         ||txt_places.getText().toString().equals("")){
 
-                    interior_txt.setError("Por favor ingresa el numero exterior y/o interior del domicilio, de no existir coloca SN");
+                    interior_txt.setError (getResources().getString(R.string.Por_favor_ingresa_SN));
 
                     save.setClickable(true);
 
@@ -3515,7 +3515,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                     TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
                     titlemsj.setText("");
-                    subtitlemsj.setText("Recuerda que para tener una precisión del lugar donde requieres tu(s) paseo(s) o utilizar las funciones de tu placa de Recuperandog es necesario que compartas con CaminanDog tu ubicación");
+                    subtitlemsj.setText (getResources().getString(R.string.Recuerda_que_para_tener_una_precision_del_lugar_donde_requieres_tus_paseos));
                     simsj.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -3548,7 +3548,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
                 PackageManager.PERMISSION_GRANTED) {
             // You can use the API that requires the permission.
             //performAction(...);
-            System.out.println("obtener ubicacion");
+            System.out.println (getResources().getString(R.string.Obtener_ubicacion));
             mMap.setMyLocationEnabled(true);
 
             locationRequest = LocationRequest.create();
@@ -3627,7 +3627,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
             TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
             titlemsj.setText("");
-            subtitlemsj.setText("Recuerda que para tener una precisión del lugar donde requieres tu(s) paseo(s) o utilizar las funciones de tu placa de Recuperandog es necesario que compartas con CaminanDog tu ubicación");
+            subtitlemsj.setText (getResources().getString(R.string.Recuerda_que_para_tener_una_precision_del_lugar_donde_requieres_tus_paseos));
             simsj.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -3680,7 +3680,7 @@ public class Inicio_Fragment extends Fragment implements OnMapReadyCallback  {
             TextView subtitlemsj = (TextView) mViewfmsj.findViewById(R.id.subtitle_dialod);
 
             titlemsj.setText("");
-            subtitlemsj.setText("Recuerda que para tener comunicación con tu paseador deberas aceptar el permiso.");
+            subtitlemsj.setText (getResources().getString(R.string.Recuerda_que_para_tener_comunicacion));
             simsj.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

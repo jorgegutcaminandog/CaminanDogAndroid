@@ -416,14 +416,14 @@ public class MainActivity extends AppCompatActivity
         } else {
             //super.onBackPressed();
             new AlertDialog.Builder(this)
-                    .setMessage((getResources().getString(R.string.Estas_seguro_de_querer_salir)))
+                    .setMessage(getResources().getString(R.string.Estas_seguro_de_querer_salir))
                     .setCancelable(false)
-                    .setPositiveButton((getResources().getString(R.string.Si)), new DialogInterface.OnClickListener() {
+                    .setPositiveButton(getResources().getString(R.string.Si), new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             MainActivity.this.finish();
                         }
                     })
-                    .setNegativeButton((getResources().getString(R.string.no)), null)
+                    .setNegativeButton(getResources().getString(R.string.no), null)
                     .show();
         }
     }
@@ -459,16 +459,16 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_inicio) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new Inicio_Fragment()).commit();
-            getSupportActionBar().setTitle((getResources().getString(R.string.Principal)));
+            getSupportActionBar().setTitle(getResources().getString(R.string.Principal));
         } else if (id == R.id.nav_perros) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new MisPerros_Fragment()).commit();
             getSupportActionBar().setTitle(getResources().getString(R.string.Perrhijos));
         } else if (id == R.id.nav_paseadores) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new Cards_Fragment()).commit();
-            getSupportActionBar().setTitle((getResources().getString(R.string.Tarjetas)));
+            getSupportActionBar().setTitle(getResources().getString(R.string.Tarjetas));
         } else if (id == R.id.nav_codigos) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new Codigos_Fragment()).commit();
-            getSupportActionBar().setTitle((getResources().getString(R.string.Codigos)));
+            getSupportActionBar().setTitle(getResources().getString(R.string.Codigos));
         } else if (id == R.id.nav_tarifas) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new Tarifas_Fragment()).commit();
             getSupportActionBar().setTitle(getResources().getString(R.string.Tarifas));
@@ -477,7 +477,7 @@ public class MainActivity extends AppCompatActivity
             getSupportActionBar().setTitle(getResources().getString(R.string.Aliados));
         }else if (id == R.id.nav_pasact){
             fragmentManager.beginTransaction().replace(R.id.contenedor,new ContenedorActivos()).commit();
-            getSupportActionBar().setTitle((getResources().getString(R.string.Paseos)));
+            getSupportActionBar().setTitle(getResources().getString(R.string.Paseos));
         }else if (id == R.id.nav_recuperandog){
             fragmentManager.beginTransaction().replace(R.id.contenedor,new ContenedorRecuperandog_Fragment()).commit();
             getSupportActionBar().setTitle("RecuperanDog");

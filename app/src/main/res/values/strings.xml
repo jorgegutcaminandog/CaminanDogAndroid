@@ -794,9 +794,29 @@
     <string name=  "Tiempo_recorrido">Tiempo recorrido</string>
     <string name=  "De">De</string>
 
+    //Inicio_Fragment//
+    <string name=  "No_es_correcto">No es correcto</string>
+    <string name=  "Por_favor_elimina_todos_los">Por favor elimina todos los ; de esta casilla</string>
+    <string name=  "Por_favor_ingresa_SN">Por favor ingresa el numero exterior y/o interior del domicilio, de no existir coloca SN</string>
+    <string name=  "Por_favor_ingresa_la_calle">Por favor ingresa la calle o el nombre del lugar</string>
+    <string name=  "No_se_pudo_formatear">No se pudo formatear la fecha</string>
+    <string name=  "Si_necesitas_modificar_alguna_fecha">Si necesitas modificar alguna fecha ya agendada, ayúdanos a reagendar mínimo con una hora de antelación al paseo. Una vez que el pasedor llegue a tu domicilio se dará por hecho</string>
+    <string name=  "selecciona_solamente">Selecciona solamente</string>
+    <string name=  "dias">dias</string>
+    <string name=  "selecciona_almenos">selecciona almenos</string>
+    <string name=  "mas_de">más de</string>
+    <string name=  "no_permitido">no permitido</string>
+    <string name=  "Selecciona_una_hora_para">Selecciona una hora para: </string>
+    <string name=  "Desafortunadamente_no_podemos_encontrar_un_DogLover">Desafortunadamente no podemos encontrar un DogLover para ti a la hora seleccionada, intenta agendar despues de las 12:00pm</string>
+    <string name=  "fecha_en_rango">fecha en_rango</string>
+    <string name=  "este_campo_es_obligatorio">Este campo es obligatorio</string>
+    <string name=  "Ingresa_un_numero_de_10_digitos">Ingresa un numero de 10 digitos</string>
+    <string name=  "Paseo_del">Paseo del</string>
+    <string name=  "a_las">a las</string>
+    <string name=  "Recuerda_que_para_tener_comunicacion">Recuerda que para tener comunicación con tu paseador deberas aceptar el permiso</string>
 
-
-
+    //Recuperandog_Informacion_Fragment//
+    <string name=  "Tu_ubicacion">Tu ubicación</string>
 
 
 </resources>

@@ -277,9 +277,9 @@ public class Login_Options extends AppCompatActivity implements GoogleApiClient.
 
                         android.app.AlertDialog.Builder builder = new AlertDialog.Builder ( Login_Options.this );
                         builder.setCancelable(false);
-                        builder.setTitle ( (getResources().getString(R.string.Acceso_denegado)));
-                        builder.setMessage ( (getResources().getString(R.string.Tu_cuenta_de_Facebook_no_tiene_email)));
-                        builder.setPositiveButton ( (getResources().getString(R.string.Aceptar)),new DialogInterface.OnClickListener () {
+                        builder.setTitle (getResources().getString(R.string.Acceso_denegado));
+                        builder.setMessage  (getResources().getString(R.string.Tu_cuenta_de_Facebook_no_tiene_email));
+                        builder.setPositiveButton (getResources().getString(R.string.Aceptar),new DialogInterface.OnClickListener () {
                             @Override
                             public void onClick(DialogInterface dialog ,int which) {
                                 startActivity(new Intent(Login_Options.this, SignupActivity.class));
